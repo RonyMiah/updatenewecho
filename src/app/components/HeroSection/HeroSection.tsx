@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
           <div className="mt-6 flex justify-center lg:justify-start">
             <a
               href="#contact"
-              className="inline-block bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition"
+              className="inline-block bg-green-500 text-white px-6 py-3 rounded-xl shadow-md hover:bg-green-600 transition"
             >
               Get In Touch
             </a>
