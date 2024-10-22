@@ -26,7 +26,7 @@ export default function Header() {
   const pathname = usePathname();
 
   const menuItems = [
-    "Profile",
+    "About",
     "Dashboard",
     "Activity",
     "Analytics",
@@ -120,13 +120,13 @@ export default function Header() {
                             radius="none"
                             variant="light"
                           >
-                            Features
+                            Services
                           </Button>
                         </DropdownTrigger>
                       </NavbarItem>
                       <DropdownMenu
                         aria-label="ACME features"
-                        className="w-[340px]"
+                        className="w-[220px] text-center "
                         itemClasses={{
                           base: "gap-4",
                         }}
@@ -135,31 +135,61 @@ export default function Header() {
                           key="autoscaling"
                           //   startContent={icons.scale}
                         >
-                          Autoscaling
+                          Commercial Cleaning
                         </DropdownItem>
                         <DropdownItem
                           key="usage_metrics"
                           //   startContent={icons.activity}
                         >
-                          Usage Metrics
+                          Office Cleaning
                         </DropdownItem>
                         <DropdownItem
                           key="production_ready"
                           //   startContent={icons.flash}
                         >
-                          Production Ready
+                          Window Cleaning
                         </DropdownItem>
                         <DropdownItem
                           key="99_uptime"
                           //   startContent={icons.server}
                         >
-                          +99% Uptime
+                          Carpet Cleaning
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          +Supreme Support
+                          Janitorial Cleaning
+                        </DropdownItem>
+                        <DropdownItem
+                          key="supreme_support"
+                          //   startContent={icons.user}
+                        >
+                          Washroom Cleaning
+                        </DropdownItem>
+                        <DropdownItem
+                          key="supreme_support"
+                          //   startContent={icons.user}
+                        >
+                          Property Maintenance
+                        </DropdownItem>
+                        <DropdownItem
+                          key="supreme_support"
+                          //   startContent={icons.user}
+                        >
+                          Hard Floor Maintenance
+                        </DropdownItem>
+                        <DropdownItem
+                          key="supreme_support"
+                          //   startContent={icons.user}
+                        >
+                          Grass Cutting Services
+                        </DropdownItem>
+                        <DropdownItem
+                          key="supreme_support"
+                          //   startContent={icons.user}
+                        >
+                          Tree & Garden Maintenance
                         </DropdownItem>
                       </DropdownMenu>
                     </Dropdown>
@@ -176,7 +206,7 @@ export default function Header() {
               );
             })}
             <NavbarItem>
-              <Button as={Link} color="warning" href="#" variant="flat">
+              <Button as={Link} color="success" href="#" variant="flat">
                 Contact
               </Button>
             </NavbarItem>

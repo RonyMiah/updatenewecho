@@ -7,6 +7,7 @@ import HighQualityService from '../QualityService/HighQualityService'
 import WhatMakesUsDifferent from '../WhatMakeUsDefarent/WhatMakeUsDefarent'
 import OurClient from '../OurClient/OurClient'
 import ContactSection from './ContactInfo/ContactSection'
+import ContactForm from '../Contact/ContactForm'
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <WhatMakesUsDifferent/>
       <OurClient/>
       <ContactSection/>
+      <ContactForm/>
     </>
   )
 }

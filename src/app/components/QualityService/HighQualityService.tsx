@@ -7,12 +7,12 @@ import highCleaning from '@/assets/highclean.png'
 
 const HighQualityService = () => {
   return (
-    <>
-      <div className=" bg-green-500 w-[900px] h-[300px] rounded-xl mx-auto flex flex-col lg:flex-row items-center lg:justify-between p-10 lg:p-16 shadow-md my-20">
+    <div className="container">
+      <div className=" bg-green-500 container h-[300px] rounded-xl mx-auto flex flex-col lg:flex-row items-center lg:justify-between p-10 lg:p-16 shadow-md my-20">
         {/* Image Section */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+        <div className="w-full  lg:w-1/2 flex justify-center lg:justify-start container">
           <Image
-            src={highCleaning} 
+            src={highCleaning}
             alt="Vacuum Cleaner"
             className="w-80 h-96 max-w-xs lg:max-w-sm -mt-40"
             width={600}
@@ -34,7 +34,7 @@ const HighQualityService = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
