@@ -1,13 +1,12 @@
-'use client'
+"use client";
 import React from "react";
-import bannerImage from "@/assets/bannerImage.png"
+import bannerImage from "@/assets/bannerImage.png";
 import Image from "next/image";
-import Lottie from "lottie-react";
-import banner from "@/assets/animation/banner.json"
+import { Slider } from "./Slider";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative bg-white overflow-hidden">
+    <section className="relative bg-white overflow-hidden py-5">
       <div className=" container mx-auto   flex flex-col-reverse lg:flex-row items-center justify-between">
         {/* Left Side: Text Content */}
         <div className="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0 mx-auto  ">
@@ -86,7 +85,8 @@ const HeroSection: React.FC = () => {
             className="w-64 md:w-96 lg:w-auto"
           /> */}
 
-          <Lottie animationData={banner} width={600} height={600}/>
+          {/* <Lottie animationData={banner} width={600} height={600}/> */}
+          <Slider />
         </div>
       </div>
 
