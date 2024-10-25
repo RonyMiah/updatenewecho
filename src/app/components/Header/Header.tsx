@@ -19,7 +19,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoChevronDownSharp } from "react-icons/io5";
 import { usePathname } from "next/navigation";
-import logo from '@/assets/logo.png'
+import logo from "@/assets/logo.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,19 +49,12 @@ export default function Header() {
   ];
 
   const AcmeLogo = () => {
-    return (
-      <Image
-        src={logo}
-        height={50}
-        width={50}
-        alt="logo"
-      />
-    );
+    return <Image src={logo} height={50} width={50} alt="logo" />;
   };
 
   return (
     <>
-      <div  >
+      <div>
         <Navbar
           isBordered
           isMenuOpen={isMenuOpen}
@@ -91,13 +84,13 @@ export default function Header() {
           </NavbarContent>
 
           <NavbarContent className="sm:hidden pr-3" justify="center">
-            <NavbarBrand>
+            <NavbarBrand as={Link} href={"/"}>
               <AcmeLogo />
             </NavbarBrand>
           </NavbarContent>
 
           <NavbarContent className="hidden sm:flex gap-4" justify="end">
-            <NavbarBrand>
+            <NavbarBrand as={Link} href={"/"}>
               <AcmeLogo />
             </NavbarBrand>
           </NavbarContent>
@@ -127,73 +120,79 @@ export default function Header() {
 
                       <DropdownMenu
                         aria-label="ACME features"
-                        className="w-[220px] text-center "
+                        className="w-[220px] text-left "
                         itemClasses={{
                           base: "gap-4",
                         }}
                       >
-                        
-                          <DropdownItem
-                            key="autoscaling"
-                            //   startContent={icons.scale}
-                          >
-                            Commercial Cleaning
-                          </DropdownItem>
-                       
+                        <DropdownItem
+                          key="autoscaling"
+                          //   startContent={icons.scale}
+                        >
+                          <Link href={"/services#01"}>Commercial Cleaning</Link>
+                        </DropdownItem>
+
                         <DropdownItem
                           key="usage_metrics"
                           //   startContent={icons.activity}
                         >
-                          Office Cleaning
+                          <Link href={"/services#02"}>Office Cleaning</Link>
                         </DropdownItem>
                         <DropdownItem
                           key="production_ready"
                           //   startContent={icons.flash}
                         >
-                          Window Cleaning
+                          <Link href={"/services#03"}>Window Cleaning</Link>
                         </DropdownItem>
                         <DropdownItem
                           key="99_uptime"
                           //   startContent={icons.server}
                         >
-                          Carpet Cleaning
+                          <Link href={"/services#04"}>Carpet Cleaning</Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          
-                          Janitorial Cleaning
+                          <Link href={"/services#05"}>Janitorial Cleaning</Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          Washroom Cleaning
+                          <Link href={"/services#06"}>Washroom Cleaning</Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          Property Maintenance
+                          <Link href={"/services#07"}>
+                            Property Maintenance
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          Hard Floor Maintenance
+                          <Link href={"/services#08"}>
+                            Hard Floor Maintenance
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          Grass Cutting Services
+                          <Link href={"/services#09"}>
+                            Grass Cutting Services
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          Tree & Garden Maintenance
+                          <Link href={"/services#010"}>
+                            Tree & Garden Maintenance
+                          </Link>
                         </DropdownItem>
                       </DropdownMenu>
                     </Dropdown>
@@ -210,30 +209,139 @@ export default function Header() {
               );
             })}
             <NavbarItem>
-              <Button as={Link} color="success" href="#" variant="flat">
+              <Button as={Link} color="success" href="/contacts" variant="flat">
                 Contact
               </Button>
             </NavbarItem>
           </NavbarContent>
 
           <NavbarMenu>
-            {menuItems.map((item, index) => (
-              <NavbarMenuItem key={`${item}-${index}`}>
-                <Link
-                  className="w-full "
-                  color={
-                    index === 2
-                      ? "warning"
-                      : index === menuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                  }
-                  href="#"
-                  //   size="lg"
-                >
-                  {item}
-                </Link>
-              </NavbarMenuItem>
+            {menus.map((item, index) => (
+              <>
+                {item.menu ? (
+                  <Dropdown key={item.name}>
+                    <NavbarMenuItem
+                      className="flex sm:hidden"
+                      isActive={pathname.includes(item.path)}
+                    >
+                      <DropdownTrigger>
+                        <Button
+                          disableRipple
+                          className="p-0 bg-transparent data-[hover=true]:bg-transparent text-lg"
+                          endContent={<IoChevronDownSharp />}
+                          radius="none"
+                          variant="light"
+                        >
+                          Services
+                        </Button>
+                      </DropdownTrigger>
+                    </NavbarMenuItem>
+
+                    <DropdownMenu
+                      aria-label="ACME features"
+                      className="w-[220px] text-left "
+                      itemClasses={{
+                        base: "gap-4",
+                      }}
+                    >
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="autoscaling"
+                        //   startContent={icons.scale}
+                      >
+                        <Link href={"/services#01"}>Commercial Cleaning</Link>
+                      </DropdownItem>
+
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="usage_metrics"
+                        //   startContent={icons.activity}
+                      >
+                        <Link href={"/services#02"}>Office Cleaning</Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="production_ready"
+                        //   startContent={icons.flash}
+                      >
+                        <Link href={"/services#03"}>Window Cleaning</Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="99_uptime"
+                        //   startContent={icons.server}
+                      >
+                        <Link href={"/services#04"}>Carpet Cleaning</Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="supreme_support"
+                        //   startContent={icons.user}
+                      >
+                        <Link href={"/services#05"}>Janitorial Cleaning</Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="supreme_support"
+                        //   startContent={icons.user}
+                      >
+                        <Link href={"/services#06"}>Washroom Cleaning</Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="supreme_support"
+                        //   startContent={icons.user}
+                      >
+                        <Link href={"/services#07"}>Property Maintenance</Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="supreme_support"
+                        //   startContent={icons.user}
+                      >
+                        <Link href={"/services#08"}>
+                          Hard Floor Maintenance
+                        </Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="supreme_support"
+                        //   startContent={icons.user}
+                      >
+                        <Link href={"/services#09"}>
+                          Grass Cutting Services
+                        </Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="supreme_support"
+                        //   startContent={icons.user}
+                      >
+                        <Link href={"/services#010"}>
+                          Tree & Garden Maintenance
+                        </Link>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </Dropdown>
+                ) : (
+                  <NavbarMenuItem key={`${item.name}-${index}`}>
+                    <Link
+                      className="w-full "
+                      color={
+                        index === 2
+                          ? "warning"
+                          : index === menuItems.length - 1
+                          ? "danger"
+                          : "foreground"
+                      }
+                      href="#"
+                      //   size="lg"
+                    >
+                      {item.name}
+                    </Link>
+                  </NavbarMenuItem>
+                )}
+              </>
             ))}
           </NavbarMenu>
         </Navbar>

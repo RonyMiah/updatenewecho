@@ -44,18 +44,18 @@ export function Slider(props: PropType) {
     [emblaApi]
   );
 
-  const toggleAutoplay = useCallback(() => {
-    const autoplay = emblaApi?.plugins()?.autoplay;
-    if (!autoplay) return;
+  //   const toggleAutoplay = useCallback(() => {
+  //     const autoplay = emblaApi?.plugins()?.autoplay;
+  //     if (!autoplay) return;
 
-    const playOrStop = autoplay.isPlaying() ? autoplay.stop : autoplay.play;
-    playOrStop();
-  }, [emblaApi]);
+  //     const playOrStop = autoplay.isPlaying() ? autoplay.stop : autoplay.play;
+  //     playOrStop();
+  //   }, [emblaApi]);
 
   useEffect(() => {
     const autoplay = emblaApi?.plugins()?.autoplay;
     if (!autoplay) return;
-
+    autoplay.play();
     setIsPlaying(autoplay.isPlaying());
     emblaApi
       .on("autoplay:play", () => setIsPlaying(true))
@@ -70,20 +70,29 @@ export function Slider(props: PropType) {
   ];
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <div className="max-w-3xl">
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex touch-pan-y touch-pinch-zoom rounded-2xl">
           {data.map((item, index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">
-                <Image src={item} height={400} width={500} alt="sd" />
+            <div className="flex-[0_0_70%] transform-gpu pl-4" key={index}>
+              <div className="">
+                <Image
+                  src={item}
+                  height={400}
+                  width={500}
+                  alt="sd"
+                  className="rounded-2xl border-0 object-cover h-full w-full"
+                />
+                <div className="absolute top-0 left-[15px] w-[calc(100%-15px)] h-full  flex items-center justify-center bg-black bg-opacity-20 text-white rounded-2xl">
+                  Text
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="flex items-center justify-between py-2">
+      <div className=" items-center justify-end py-2 hidden sm:flex">
         <div className="embla__buttons">
           <PrevButton
             onClick={() => onButtonAutoplayClick(onPrevButtonClick)}
@@ -95,13 +104,13 @@ export function Slider(props: PropType) {
           />
         </div>
 
-        <button
+        {/* <button
           className="border rounded-md w-20 h-10"
           onClick={toggleAutoplay}
           type="button"
         >
           {isPlaying ? "Stop" : "Start"}
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ import { Slider } from "./Slider";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative bg-white overflow-hidden py-5">
-      <div className=" container mx-auto   flex flex-col-reverse lg:flex-row items-center justify-between">
+    <section className="relative bg-slate-50 overflow-hidden py-8">
+      <div className=" sm:container mx-auto   flex flex-col-reverse lg:flex-row items-center justify-between">
         {/* Left Side: Text Content */}
         <div className="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0 mx-auto  ">
           <h1 className="text-4xl md:text-5xl lg:text-6xl  leading-tight">
