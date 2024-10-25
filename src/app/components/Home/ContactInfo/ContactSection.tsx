@@ -15,7 +15,7 @@ const ContactSection: React.FC = () => {
           </h2>
           <p className="text-gray-600 mt-4 py-3">
             Locate us effortlessly with our shared location information. Whether
-            you're visiting our office or scheduling a service,
+            you &apos; re visiting our office or scheduling a service,
             <br />
             our location details are readily available to guide you. Reach out
             to us for easy directions and quick access!.
@@ -41,9 +41,11 @@ const ContactSection: React.FC = () => {
             <MdCall className="text-blue-500 text-6xl mr-4" />
             <div>
               <h3 className="font-semibold text-2xl">Telephone number</h3>
-              <p className="text-gray-500">+60330053856 ,
+              <p className="text-gray-500">
+                +60330053856 ,
                 <br />
-                 03-3005 3856</p>
+                03-3005 3856
+              </p>
             </div>
           </div>
 

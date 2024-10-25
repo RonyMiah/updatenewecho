@@ -1,4 +1,4 @@
-import Lottie from 'lottie-react';
+// import Lottie from 'lottie-react';
 import Image from 'next/image';
 import React from 'react'
 import projectServices from '@/assets/project-banner.png'

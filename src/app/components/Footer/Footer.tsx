@@ -9,8 +9,8 @@ import {
   FaArrowRight,
   FaTree,
 } from "react-icons/fa";
-import { MdNaturePeople, MdOutlineCleanHands } from "react-icons/md";
-import { SiCcleaner } from "react-icons/si";
+import {  MdOutlineCleanHands } from "react-icons/md";
+
 
 const Footer: React.FC = () => {
   return (

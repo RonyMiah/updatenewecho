@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import clean1 from "@/assets/about/about-1.jpg";
@@ -18,9 +17,7 @@ const AboutCard = () => {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
-  const plugin1 = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
+
 
   return (
     <div className="mt-16">

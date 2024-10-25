@@ -19,7 +19,7 @@ export function Slider(props: PropType) {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
     Autoplay({ playOnInit: false, delay: 3000 }),
   ]);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [, setIsPlaying] = useState(true);
 
   const {
     prevBtnDisabled,
