@@ -157,7 +157,7 @@ const ContactForm = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-[80px] p-2 bg-[#E73712] text-white font-bold rounded-md hover:bg-[#33297C] transition duration-200 "
+              className="w-[80px] p-2 bg-[#2563EB] text-white font-bold rounded-md hover:bg-[#23C55E] transition duration-200 "
             >
               Submit
             </button>
@@ -166,7 +166,7 @@ const ContactForm = () => {
 
         {/* Address Section */}
         <div className="lg:w-1/2 w-full bg-[#33297C] h-[800px] text-white p-8 rounded-lg shadow-md ">
-          <h2 className="text-red-500 text-3xl font-bold mb-6">Address</h2>
+          <h2 className="text-[#23C55E] text-3xl font-bold mb-6">Address</h2>
           <div className="space-y-2">
             <p>Lot 568-03-91, Kompleks Mutiara, </p>
             <p>Batu 3 ½ , Jalam Lpoh,</p>
@@ -214,11 +214,11 @@ const ContactForm = () => {
             >
               <button
                 className={`
-                bg-red-500 flex justify-center items-center gap-1
-                hover:bg-[#33297C] hover:scale-105
+                bg-[#2563EB] flex justify-center items-center gap-1
+                hover:bg-[#23C55E] hover:scale-105
                 text-white font-semibold py-2 px-4 text-base
                 rounded-full shadow-md transition-transform duration-300 ease-in-out
-                focus:outline-none focus:ring-2 focus:ring-[#33297C]
+                focus:outline-none focus:ring-2 focus:ring-[#23C55E]
               `}
               >
                 Get Our Company Profile

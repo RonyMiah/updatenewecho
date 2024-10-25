@@ -124,6 +124,7 @@ export default function Header() {
                           </Button>
                         </DropdownTrigger>
                       </NavbarItem>
+
                       <DropdownMenu
                         aria-label="ACME features"
                         className="w-[220px] text-center "
@@ -131,12 +132,14 @@ export default function Header() {
                           base: "gap-4",
                         }}
                       >
-                        <DropdownItem
-                          key="autoscaling"
-                          //   startContent={icons.scale}
-                        >
-                          Commercial Cleaning
-                        </DropdownItem>
+                        
+                          <DropdownItem
+                            key="autoscaling"
+                            //   startContent={icons.scale}
+                          >
+                            Commercial Cleaning
+                          </DropdownItem>
+                       
                         <DropdownItem
                           key="usage_metrics"
                           //   startContent={icons.activity}
@@ -159,6 +162,7 @@ export default function Header() {
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
+                          
                           Janitorial Cleaning
                         </DropdownItem>
                         <DropdownItem
