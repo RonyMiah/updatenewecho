@@ -6,9 +6,33 @@ import { FaArrowRight } from "react-icons/fa";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import { GiLoveMystery } from "react-icons/gi";
 
+const statsData = [
+  {
+    icon: (
+      <GiLoveMystery className="text-green-500 text-4xl lg:text-6xl ring-1 p-2 lg:p-4 rounded-full ring-[#23C55E] bg-[#23C55E] bg-opacity-20" />
+    ),
+    number: "2000+",
+    label: "Clients",
+  },
+  {
+    icon: (
+      <IoCheckmarkDoneSharp className="text-green-500 text-4xl lg:text-6xl ring-1 p-2 lg:p-4 rounded-full ring-[#23C55E] bg-[#23C55E] bg-opacity-20" />
+    ),
+    number: "100+",
+    label: "Jobs Done",
+  },
+  {
+    icon: (
+      <FaPeopleGroup className="text-green-500 text-4xl lg:text-6xl ring-1 p-2 lg:p-4 rounded-full ring-[#23C55E] bg-[#23C55E] bg-opacity-20" />
+    ),
+    number: "800+",
+    label: "Employees",
+  },
+];
+
 const WhatMakesUsDifferent: React.FC = () => {
   return (
-    <div className="bg-white px-4 md:px-8 container my-20 md:my-40">
+    <div className="bg-white container my-20 md:my-40">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         {/* Left Section: Illustration */}
         <div className="flex justify-center lg:justify-start">
@@ -23,8 +47,8 @@ const WhatMakesUsDifferent: React.FC = () => {
 
         {/* Right Section: Text and Stats */}
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 md:mb-5">
-            What makes us <p className="text-blue-500">different?</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 md:mb-5 font-bitter">
+            What makes us <span className="text-blue-500">different?</span>
           </h2>
           <p className="text-gray-600 leading-relaxed text-sm md:text-base">
             At New Eco, we deliver eco-friendly cleaning with non-toxic
@@ -35,41 +59,19 @@ const WhatMakesUsDifferent: React.FC = () => {
 
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-2">
-            <div className="flex items-center gap-4">
-              <GiLoveMystery className="text-green-500 text-4xl lg:text-6xl ring-1 p-2 lg:p-4 rounded-full" />
-              <div>
-                <div className="text-start text-xl md:text-2xl font-bold text-blue-600">
-                  2000+
-                </div>
-                <div className="text-start text-gray-500 text-lg md:text-xl font-bold">
-                  Clients
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <IoCheckmarkDoneSharp className="text-green-500 text-4xl lg:text-6xl ring-1 p-2 lg:p-4 rounded-full" />
-              <div>
-                <div className="text-start text-xl md:text-2xl font-bold text-blue-600">
-                  100+
-                </div>
-                <div className="text-start text-gray-500 text-lg md:text-xl font-bold">
-                  Jobs Done
+            {statsData.map((stat, index) => (
+              <div key={index} className="flex items-center gap-4">
+                {stat.icon}
+                <div>
+                  <div className="text-start text-xl font-semibold text-blue-600">
+                    {stat.number}
+                  </div>
+                  <div className="text-start text-gray-500 text-lg font-medium">
+                    {stat.label}
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <FaPeopleGroup className="text-green-500 text-4xl lg:text-6xl ring-1 p-2 lg:p-4 rounded-full" />
-              <div>
-                <div className="text-start text-xl md:text-2xl font-bold text-blue-600">
-                  800+
-                </div>
-                <div className="text-start text-gray-500 text-lg md:text-xl font-bold">
-                  Employees
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Button */}

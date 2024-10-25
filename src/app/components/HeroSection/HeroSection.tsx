@@ -1,41 +1,36 @@
-'use client'
+"use client";
 import React from "react";
-import bannerImage from "@/assets/bannerImage.png"
+import bannerImage from "@/assets/home_man.png";
 import Image from "next/image";
-import Lottie from "lottie-react";
-import banner from "@/assets/animation/banner.json"
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative bg-white overflow-hidden">
-      <div className=" container mx-auto   flex flex-col-reverse lg:flex-row items-center justify-between">
+    <section className="relative bg-slate-50 overflow-hidden pt-10">
+      <div className=" md:container flex flex-col lg:flex-row items-center justify-between">
         {/* Left Side: Text Content */}
-        <div className="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0 mx-auto  ">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl  leading-tight">
-            <span className="lg:text-7xl font-semibold">Professional,</span>{" "}
-            <span className="text-blue-600 lg:text-7xl font-semibold ">
-              Trusted
-            </span>
-            <span className="text-green-500 underline decoration-wavy lg:text-7xl font-extrabold ms-4">
+        <div className="w-10/12 text-center lg:text-left mt-8 lg:mt-0 mx-auto  ">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl  leading-tight font-bitter text-left">
+            <span className="block">Professional, </span>
+            <span className="text-blue-600">Trusted</span>
+            <span className="text-green-500 underline decoration-clonefont-medium ms-4">
               Solutions
             </span>
           </h1>
-          <p className="mt-4 text-gray-600 max-w-md mx-auto lg:mx-0">
+          <p className="mt-4 text-gray-600 text-left lg:mx-0 text-sm w-10/12">
             Driven by a commitment to excellence, we ensure every corner gleams
-            with perfection. We go beyond expectations to deliver results with
-            unmatched dedication, leaving no space untouched. Your satisfaction
-            is our priority, transforming every environment into a pristine
-            oasis .
+            with perfection, going beyond expectations to deliver unmatched
+            results. Your satisfaction is our priority as we transform every
+            environment into a pristine oasis, leaving no space untouched.
           </p>
-          <div className="mt-6 flex justify-center lg:justify-start">
+          <div className="mt-6 flex justify-start">
             <a
               href="#contact"
-              className="inline-block bg-green-500 text-white px-6 py-3 rounded-xl shadow-md hover:bg-green-600 transition"
+              className="inline-block bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition"
             >
               Get In Touch
             </a>
           </div>
-          <div className="mt-6 flex justify-center lg:justify-start items-center space-x-3">
+          <div className="mt-6 flex justify-start items-center space-x-3 pb-5 md:pb-0">
             <div className="flex -space-x-2">
               <Image
                 src={bannerImage}
@@ -77,16 +72,16 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Right Side: Illustration */}
-        <div className="lg:w-1/2 flex justify-center lg:justify-end">
-          {/* <Image
+        <div className="lg:w-1/2 flex justify-center lg:justify-end max-w-96">
+          <Image
             src={bannerImage}
             alt="Cleaning Service"
             width={800}
             height={800}
-            className="w-64 md:w-96 lg:w-auto"
-          /> */}
+            className="w-full lg:w-auto"
+          />
 
-          <Lottie animationData={banner} width={600} height={600}/>
+          {/* <Lottie animationData={banner} width={600} height={600} /> */}
         </div>
       </div>
 

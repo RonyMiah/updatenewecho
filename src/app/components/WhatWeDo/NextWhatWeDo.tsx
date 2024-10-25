@@ -10,19 +10,44 @@ import { FaBath, FaCommentAlt } from "react-icons/fa";
 import { GiWindow } from "react-icons/gi";
 import { RiHomeOfficeFill } from "react-icons/ri";
 
+const servicesData = [
+  {
+    name: "Office",
+    icon: <RiHomeOfficeFill />,
+  },
+  {
+    name: "Window",
+    icon: <GiWindow />,
+  },
+  {
+    name: "Carpet",
+    icon: <FaCommentAlt />,
+  },
+  {
+    name: "Washroom",
+    icon: <FaBath />,
+  },
+  {
+    name: "Property",
+    icon: <BsFillHouseCheckFill />,
+  },
+  {
+    name: "Grass Cutting",
+    icon: <MdOutlineContentCut />,
+  },
+];
+
 const NextWhatWeDo = () => {
   return (
     <section className="py-16 bg-white">
-        <hr className="border-0.5 py-10" />
+      <hr className="border-0.5 py-10" />
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 px-6">
-          <h2 className="text-3xl lg:text-5xl sx:text-2xl sm:text-3xl  font-bold mb-4 text-gray-800">
-            Whether you require a complete office clean-up, specialized window
-            cleaning, or thorough carpet care,
+        <div className="w-full lg:w-1/2">
+          <h2 className="text-3xl lg:text-5xl sx:text-2xl sm:text-3xl  font-bold mb-4 font-bitter">
+            From office clean-ups to window and carpet care,
             <span className="text-blue-600">
-              our team is equipped to handle it all efficiently and
-              professionally.
+              our strong team handles everything efficiently.
             </span>
           </h2>
           <p className="text-gray-600 mb-8">
@@ -34,45 +59,17 @@ const NextWhatWeDo = () => {
 
           {/* Services Section */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-            <div className="flex items-center space-x-2">
-              <span className="bg-teal-200 p-2 rounded-full">
-                <RiHomeOfficeFill />
-              </span>
-              <p className="text-gray-700">OFFICE</p>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="bg-teal-200 p-2 rounded-full">
-                <GiWindow />
-              </span>
-              <p className="text-gray-700">WINDOW</p>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="bg-teal-200 p-2 rounded-full">
-                <FaCommentAlt />
-              </span>
-              <p className="text-gray-700">CARPET</p>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="bg-teal-200 p-2 rounded-full">
-                <FaBath />
-              </span>
-              <p className="text-gray-700">WASHROOM</p>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="bg-teal-200 p-2 rounded-full">
-                <BsFillHouseCheckFill />
-              </span>
-              <p className="text-gray-700">PROPERTY</p>
-            </div>
-            <div className="flex items-center space-x-2">
-              <span className="bg-teal-200 p-2 rounded-full">
-                <MdOutlineContentCut />
-              </span>
-              <p className="text-gray-700">GRASS CUTTING</p>
-            </div>
+            {servicesData.map((service, index) => (
+              <div key={index} className="flex items-center space-x-2">
+                <span className="bg-[#23C55E] p-2 rounded-full text-[#23C55E] bg-opacity-20">
+                  {service.icon}
+                </span>
+                <p className="text-gray-700">{service.name}</p>
+              </div>
+            ))}
           </div>
 
-          <button className="bg-[#23C55E] text-white px-6 py-3 rounded-xl text-lg shadow-lg hover:bg-blue-700 transition-all">
+          <button className="bg-[#23C55E] text-white px-6 py-3 text-lg rounded-md hover:bg-blue-700 transition-all">
             View Our More Services
           </button>
         </div>

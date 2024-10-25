@@ -19,7 +19,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoChevronDownSharp } from "react-icons/io5";
 import { usePathname } from "next/navigation";
-import logo from '@/assets/logo.png'
+import logo from "@/assets/logo.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,21 +49,13 @@ export default function Header() {
   ];
 
   const AcmeLogo = () => {
-    return (
-      <Image
-        src={logo}
-        height={50}
-        width={50}
-        alt="logo"
-      />
-    );
+    return <Image src={logo} height={50} width={50} alt="logo" />;
   };
 
   return (
     <>
-      <div  >
+      <div className="border-b  sticky top-0 z-10">
         <Navbar
-          isBordered
           isMenuOpen={isMenuOpen}
           onMenuOpenChange={setIsMenuOpen}
           maxWidth="full"
@@ -83,6 +75,7 @@ export default function Header() {
               "data-[active=true]:after:bg-primary",
             ],
           }}
+          className="container px-0"
         >
           <NavbarContent className="sm:hidden" justify="start">
             <NavbarMenuToggle

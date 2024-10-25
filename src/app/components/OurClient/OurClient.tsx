@@ -13,21 +13,18 @@ const OurClient = () => {
   const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
   return (
-    <div className="md:px-16 lg:px-16 my-6">
-      <h2 className="text-center text-[#33297C] font-bold text-4xl mx-auto my-6">
+    <div className="my-6 container">
+      <h2 className="text-center font-bitter font-bold text-4xl mx-auto my-6">
         Our Clients
       </h2>
 
-      <div className="flex flex-wrap justify-center items-center gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 justify-center items-center gap-6">
         {logos.map((logo, index) => (
-          <div
-            key={index}
-            className="sx:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 p-4 flex justify-center items-center"
-          >
+          <div key={index} className="flex justify-center items-center">
             <Image
               src={logo}
               alt={`Logo ${index + 1}`}
-              className="rounded-xl border-0.5 border hover:scale-105 transform transition-transform duration-300 shadow-lg w-60 h-48 p-2"
+              className="rounded-xl border-0.5 border hover:scale-105 transform transition-transform duration-300 w-60 h-48"
               width={250}
               height={120}
             />

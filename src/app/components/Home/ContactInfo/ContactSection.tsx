@@ -5,7 +5,7 @@ import { MdLocationOn, MdCall, MdEmail } from "react-icons/md"; // Icons from re
 
 const ContactSection: React.FC = () => {
   return (
-    <div className="bg-white pt-16 px-8 md:px-16 lg:px-32 my-20">
+    <div className="bg-white pt-16 px-8 md:px-16 lg:px-32 my-20" id="contact">
       <div className="max-w-6xl mx-auto text-center space-y-6">
         {/* Title Section */}
         <div className="">
@@ -15,7 +15,7 @@ const ContactSection: React.FC = () => {
           </h2>
           <p className="text-gray-600 mt-4 py-3">
             Locate us effortlessly with our shared location information. Whether
-            you're visiting our office or scheduling a service,
+            you&apos;re visiting our office or scheduling a service,
             <br />
             our location details are readily available to guide you. Reach out
             to us for easy directions and quick access!.
@@ -41,9 +41,11 @@ const ContactSection: React.FC = () => {
             <MdCall className="text-blue-500 text-6xl mr-4" />
             <div>
               <h3 className="font-semibold text-2xl">Telephone number</h3>
-              <p className="text-gray-500">+60330053856 ,
+              <p className="text-gray-500">
+                +60330053856 ,
                 <br />
-                 03-3005 3856</p>
+                03-3005 3856
+              </p>
             </div>
           </div>
 
