@@ -45,7 +45,7 @@ const NextWhatWeDo = () => {
               <span className="bg-teal-200 p-2 rounded-full">
                 <GiWindow />
               </span>
-              <p className="text-gray-700">WINDOW</p>
+              <p className="text-gray-700"> JANITORIAL </p>
             </div>
             <div className="flex items-center space-x-2">
               <span className="bg-teal-200 p-2 rounded-full">

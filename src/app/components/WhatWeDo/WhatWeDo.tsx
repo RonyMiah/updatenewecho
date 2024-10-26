@@ -82,7 +82,7 @@ const WhatWeDo: React.FC = () => {
               />
             </div>
             <h3 className="text-lg font-semibold text-white mb-2">
-              WINDOW CLEANING SERVICES
+              JANITORIAL CLEANING SERVICES
             </h3>
           </div>
 
