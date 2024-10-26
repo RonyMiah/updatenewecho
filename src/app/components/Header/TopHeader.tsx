@@ -11,7 +11,9 @@ const TopHeader = () => {
           href="https://www.newecobm.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm md:text-base border border-white px-4 py-1 rounded hover:bg-white hover:text-blue-500 transition"
+          className="text-sm md:text-base border border-white px-4 py-1 rounded hover:bg-white hover:text-blue-500 transition
+          sx:hidden sm:block md:block lg:block
+          "
         >
           www.newecobm.com
         </a>
