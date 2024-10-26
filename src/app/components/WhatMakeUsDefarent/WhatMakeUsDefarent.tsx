@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const WhatMakesUsDifferent: React.FC = () => {
   return (
-    <div className="bg-white px-4 md:px-8 container my-20 md:my-40">
+    <div className="bg-white px-4 md:px-8 lg:container md:container  my-20 md:my-40">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         {/* Left Section: Illustration */}
         <div className="flex justify-center lg:justify-start">

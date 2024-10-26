@@ -15,7 +15,7 @@ const OurClient = () => {
   const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7,logo8, logo9];
 
   return (
-    <div className="md:px-16 lg:px-16 my-6">
+    <div className="sm:px-0 sx:px-0 md:px-16 lg:px-16 my-6">
       <h2 className="text-center text-[#33297C] font-bold text-4xl mx-auto my-6">
         Our Clients
       </h2>

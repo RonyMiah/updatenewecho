@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const HighQualityService = () => {
   return (
-    <div className="container">
+    <div className="lg:container md:container ">
       <div className=" bg-green-500 container h-[300px] rounded-xl mx-auto flex flex-col lg:flex-row items-center lg:justify-between p-10 lg:p-16 shadow-md my-20">
         {/* Image Section */}
         <div className="w-full  lg:w-1/2 flex justify-center lg:justify-start container">

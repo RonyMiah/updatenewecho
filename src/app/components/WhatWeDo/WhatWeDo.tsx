@@ -17,7 +17,7 @@ const WhatWeDo: React.FC = () => {
         <AiFillThunderbolt className="size-7 gap-2" />
         What We Do ____
       </div>
-      <div className="container mx-auto px-6 text-center">
+      <div className="lg:container md:container mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-4xl font-bold text-gray-900 mb-6">
           How does our <span className="text-blue-600">solution work?</span>
