@@ -40,7 +40,7 @@ const AboutCard = () => {
                 Maintenance, Special Services, Value Added Services, Post
                 construction cleaning, Spring cleaning, Carpet and upholstery
                 cleaning, External facade cleaning, Mattress & Sofa Cleaning,
-                External Glass Windows Cleaning, Maintenance cleaning, General,
+                 General,
                 cleaning or Deep cleaning, Disinfecting service, Air
                 conditioning service, Export Import service and Manpower
                 service.

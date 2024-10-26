@@ -5,7 +5,7 @@ import {  AiFillThunderbolt } from "react-icons/ai";
 import Lottie from "lottie-react";
 import whatwedo1 from '@/assets/animation/whatwedo1.json'
 import whatwedo2 from '@/assets/animation/whatwedo2.json'
-import whatwedo3 from '@/assets/animation/whatwedo3.json'
+import whatwedo3 from '@/assets/animation/brashaIcon.json'
 import whatwedo4 from '@/assets/animation/whatwedo4.json'
 import Link from "next/link";
 const WhatWeDo: React.FC = () => {

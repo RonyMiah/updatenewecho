@@ -598,7 +598,7 @@ const ServiceSlideText = () => {
                 <li>Refuse sacks and bin liners</li>
                 <li>Floor Cleaning </li>
                 <li>Multi Surface Cleaning</li>
-                <li>Window Cleaning</li>
+                {/* <li>Window Cleaning</li> */}
                 <li>Brushes & Mops </li>
               </div>
             </ul>
