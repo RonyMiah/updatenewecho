@@ -121,7 +121,7 @@ export function Slider(props: PropType) {
                   alt="sd"
                   className="rounded-2xl border-0 object-cover h-[350px] w-[600px]"
                 />
-                <div className="absolute top-0 left-[15px] w-[calc(100%-15px)] h-full  flex items-end justify-center bg-black bg-opacity-40 text-white rounded-2xl font-bold text-xl py-4">
+                <div className="absolute top-0 left-[15px] w-[calc(100%-15px)] h-full  flex items-end justify-center bg-black bg-opacity-40 text-white rounded-2xl font-bold lg:text-xl md:text-base sm:text-base sx:text-xs py-4">
                   {item.title}
                 </div>
               </div>

@@ -13,9 +13,9 @@ import carousel1_3 from "@/assets/services/carosel1-3.jpg";
 import carousel2_1 from "@/assets/services/carosel2-1.jpg";
 import carousel2_2 from "@/assets/services/carosel2-2.jpg";
 import carousel2_3 from "@/assets/services/carosel2-3.jpg";
-import carousel3_1 from "@/assets/services/carosel3-1.jpg";
-import carousel3_2 from "@/assets/services/carosel3-2.jpg";
-import carousel3_3 from "@/assets/services/carosel3-3.jpg";
+// import carousel3_1 from "@/assets/services/carosel3-1.jpg";
+// import carousel3_2 from "@/assets/services/carosel3-2.jpg";
+// import carousel3_3 from "@/assets/services/carosel3-3.jpg";
 import carousel4_1 from "@/assets/services/carosel4-1.jpg";
 import carousel4_2 from "@/assets/services/carosel4-2.jpg";
 import carousel4_3 from "@/assets/services/carosel4-3.jpg";
@@ -50,9 +50,9 @@ const ServiceSlideText = () => {
   const plugin2 = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
-  const plugin3 = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
+//   const plugin3 = React.useRef(
+//     Autoplay({ delay: 2000, stopOnInteraction: true })
+//   );
   const plugin4 = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
