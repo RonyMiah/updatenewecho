@@ -1,5 +1,6 @@
 // src/components/Footer.tsx
 
+import Link from "next/link";
 import React from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import {
@@ -61,7 +62,16 @@ const Footer: React.FC = () => {
               (info, idx) => (
                 <li key={idx} className="flex items-center space-x-2">
                   <FaArrowRight className="text-green-500" />
-                  <span>{info}</span>
+
+                  {info === "Contacts" ? (
+                    <Link href="/contacts">{info}</Link>
+                  ) : info === "Services" ? (
+                    <Link href="/services">{info}</Link>
+                  ) : info === "Privacy Policy" ? (
+                    <Link href="/policy">{info}</Link>
+                  ) : (
+                    <span>{info}</span>
+                  )}
                 </li>
               )
             )}
