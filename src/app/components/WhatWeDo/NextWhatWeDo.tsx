@@ -9,11 +9,12 @@ import { BsFillHouseCheckFill } from "react-icons/bs";
 import { FaBath, FaCommentAlt } from "react-icons/fa";
 import { GiWindow } from "react-icons/gi";
 import { RiHomeOfficeFill } from "react-icons/ri";
+import Link from "next/link";
 
 const NextWhatWeDo = () => {
   return (
     <section className="py-16 bg-white">
-        <hr className="border-0.5 py-10" />
+      <hr className="border-0.5 py-10" />
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 px-6">
@@ -71,10 +72,11 @@ const NextWhatWeDo = () => {
               <p className="text-gray-700">GRASS CUTTING</p>
             </div>
           </div>
-
-          <button className="bg-[#23C55E] text-white px-6 py-3 rounded-xl text-lg shadow-lg hover:bg-blue-700 transition-all">
-            View Our More Services
-          </button>
+          <Link href="/services">
+            <button className="bg-[#23C55E] text-white px-6 py-3 rounded-xl text-lg shadow-lg hover:bg-blue-700 transition-all">
+              View Our More Services
+            </button>
+          </Link>
         </div>
 
         {/* Image Section */}

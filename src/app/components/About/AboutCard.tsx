@@ -12,6 +12,8 @@ import clean3 from "@/assets/about/about-3.jpg";
 import { Carousel, CarouselContent, CarouselItem } from "@/Components/ui/carousel";
 import { Card, CardContent } from "@/Components/ui/card";
 import { FiArrowRight } from "react-icons/fi";
+import Link from "next/link";
+import BackToTopButton from "../BackToTopButton/BackToTopButton";
 
 const AboutCard = () => {
   const plugin = React.useRef(
@@ -176,17 +178,21 @@ const AboutCard = () => {
 
       <div className=" container flex space-x-4 justify-center items-center my-8">
         {/* Quick Contact Button */}
-        <button className="bg-lime-600 text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-lime-700 transition duration-300">
-          <span>Quick Contact</span>
-          <FiArrowRight className="text-white" />
-        </button>
-
+        <Link href="/contacts">
+          <button className="bg-lime-600 text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-lime-700 transition duration-300">
+            <span>Quick Contact</span>
+            <FiArrowRight className="text-white" />
+          </button>
+        </Link>
         {/* Explore Services Button */}
-        <button className="border border-gray-300 px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-lime-700 hover:text-white transition duration-300">
-          <span>Explore services</span>
-          <FiArrowRight />
-        </button>
+        <Link href="/services">
+          <button className="border border-gray-300 px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-lime-700 hover:text-white transition duration-300">
+            <span>Explore services</span>
+            <FiArrowRight />
+          </button>
+        </Link>
       </div>
+      <BackToTopButton />
     </div>
   );
 };

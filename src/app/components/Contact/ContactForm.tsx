@@ -8,6 +8,8 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 import { IoMdPhonePortrait } from "react-icons/io";
 import Link from "next/link";
+import { FaWhatsappSquare } from "react-icons/fa";
+import BackToTopButton from "../BackToTopButton/BackToTopButton";
 
 const ContactForm = () => {
   const {
@@ -185,7 +187,11 @@ const ContactForm = () => {
             </p>
             <p className="flex justify-start items-center gap-2">
               <IoMdPhonePortrait className="text-red-500 text-2xl" />
-              +60330053856 , 03-3005 3856
+              0330053856 ,
+              <div className="flex justify-center items-center gap-1">
+                <FaWhatsappSquare className="text-green-500 size-6" />
+                0162606040
+              </div>
             </p>
           </div>
 
@@ -229,6 +235,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      <BackToTopButton />
     </div>
   );
 };

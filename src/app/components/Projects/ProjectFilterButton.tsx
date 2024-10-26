@@ -7,87 +7,100 @@ import { FaQrcode } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import ProjectCard from "./ProjectCard";
+import BackToTopButton from "../BackToTopButton/BackToTopButton";
 
 //Project Data Json File
+
 const data = [
   {
     id: 1,
-    title: "Elmina Lakeside Mall",
+    title: "Damansara Business Center",
     image:
-      "https://plus.unsplash.com/premium_photo-1670315264879-59cc6b15db5f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1681338224373-9669c2497c05?q=80&w=2007&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Commercial Developments",
+    description:
+      "A vibrant commercial center in Damansara Heights, designed to accommodate businesses of all sizes with modern amenities.",
   },
+
   {
     id: 2,
-    title: "Pavilion Damansara Heights",
+    title: "Bukit Jalil Pavilion Mall",
     image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Commercial Developments",
+      "https://images.unsplash.com/photo-1481437156560-3205f6a55735?q=80&w=2095&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "A bustling retail destination offering world-class shopping and entertainment in the heart of Bukit Jalil.",
   },
   {
     id: 3,
-    title: "Pavilion Bukit Jalil",
+    title: "Ampang Global Bank Center",
     image:
-      "https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Commercial Developments",
+      "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "A modern banking hub in Ampang, designed to support financial institutions with innovative office spaces.",
   },
   {
     id: 4,
-    title: "Bank of China, Ampang",
+    title: "Elmina Corporate Plaza",
     image:
-      "https://plus.unsplash.com/premium_photo-1661879435429-a396d927c686?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Commercial Developments",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "A state-of-the-art commercial complex offering premium office spaces in the serene Elmina Lakeside area.",
   },
   {
     id: 5,
-    title: "1 Utama Theme Park (NextGen)",
+    title: "NextGen Adventure Park",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Commercial Developments",
+      "https://images.unsplash.com/photo-1564409972016-2825589beaed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "A cutting-edge entertainment facility at 1 Utama featuring thrilling rides and attractions for all ages.",
   },
   {
     id: 6,
-    title: "Tzu Chi International School KL",
+    title: "Tzu Chi International School",
     image:
-      "https://plus.unsplash.com/premium_photo-1723823036326-075a2ec87fc4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1697729419943-30521d527501?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Others",
+    description:
+      "An elite international school in Kuala Lumpur focused on holistic education and community development.",
   },
   {
     id: 7,
-    title: "Elmina Lakeside Mall",
+    title: "Damansara Lakeside Residences",
     image:
-      "https://plus.unsplash.com/premium_photo-1670315264879-59cc6b15db5f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Commercial Developments",
+      "https://plus.unsplash.com/premium_photo-1724701624517-22953482ce56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "A mixed-use development combining luxurious living spaces with prime retail outlets in Damansara Heights.",
   },
   {
     id: 8,
-    title: "Mixed Use  Damansara Heights",
+    title: "Bukit Jalil Cinema Complex",
     image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Mixed Use Developments",
+      "https://plus.unsplash.com/premium_photo-1709594070896-fc3869d4dcd6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Cinema",
+    description:
+      "A premier cinema complex in Bukit Jalil offering the latest in film technology for an immersive movie experience.",
   },
   {
     id: 9,
-    title: "Cinema Bukit Jalil",
+    title: "Ampang Luxury Apartments",
     image:
-      "https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Cinema",
+      "https://plus.unsplash.com/premium_photo-1661962459469-27479898b31e?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Residential Developments",
+    description:
+      "Luxurious apartment living in the heart of Ampang, offering state-of-the-art facilities and modern design.",
   },
   {
     id: 10,
-    title: "Bank of China, Ampang",
+    title: "NextGen Residences at 1 Utama",
     image:
-      "https://plus.unsplash.com/premium_photo-1661879435429-a396d927c686?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1694475731860-1fe1cb7a1897?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "Residential Developments",
+    description:
+      "High-end residential units located within 1 Utama, combining the comfort of home with convenient access to shopping and entertainment.",
   },
-  {
-    id: 11,
-    title: "1 Utama Theme Park (NextGen)",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "Residential Developments",
-  },
+  
 ];
+
 
 //Project Single Card Modal
 
@@ -298,6 +311,7 @@ const ProjectFilterButton = () => {
           </div>
         </div>
       )}
+      <BackToTopButton />
     </div>
   );
 };

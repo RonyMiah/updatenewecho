@@ -39,6 +39,7 @@ export default function Header() {
   ];
 
   const menus = [
+    { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     {
       name: "Services",
@@ -54,7 +55,7 @@ export default function Header() {
 
   return (
     <>
-      <div>
+      <div className="bg-blue-900   ">
         <Navbar
           isBordered
           isMenuOpen={isMenuOpen}
@@ -103,7 +104,7 @@ export default function Header() {
                     <Dropdown key={menu.name}>
                       <NavbarItem
                         className="hidden sm:flex"
-                        isActive={pathname.includes(menu.path)}
+                        isActive={pathname === menu.path}
                       >
                         <DropdownTrigger>
                           <Button
@@ -138,12 +139,14 @@ export default function Header() {
                         >
                           <Link href={"/services#02"}>Office Cleaning</Link>
                         </DropdownItem>
-                        <DropdownItem
+
+                        {/* <DropdownItem
                           key="production_ready"
                           //   startContent={icons.flash}
                         >
                           <Link href={"/services#03"}>Window Cleaning</Link>
-                        </DropdownItem>
+                        </DropdownItem> */}
+
                         <DropdownItem
                           key="99_uptime"
                           //   startContent={icons.server}
@@ -200,7 +203,7 @@ export default function Header() {
                     <NavbarItem
                       key={menu.name}
                       className="hidden sm:flex px-8"
-                      isActive={pathname.includes(menu.path)}
+                      isActive={pathname === menu.path}
                     >
                       <Link href={menu.path}>{menu.name}</Link>
                     </NavbarItem>
@@ -259,13 +262,15 @@ export default function Header() {
                       >
                         <Link href={"/services#02"}>Office Cleaning</Link>
                       </DropdownItem>
-                      <DropdownItem
+
+                      {/* <DropdownItem
                         onClick={() => setIsMenuOpen(false)}
                         key="production_ready"
                         //   startContent={icons.flash}
                       >
                         <Link href={"/services#03"}>Window Cleaning</Link>
-                      </DropdownItem>
+                      </DropdownItem> */}
+
                       <DropdownItem
                         onClick={() => setIsMenuOpen(false)}
                         key="99_uptime"

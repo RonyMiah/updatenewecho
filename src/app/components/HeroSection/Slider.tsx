@@ -64,9 +64,47 @@ export function Slider(props: PropType) {
   }, [emblaApi]);
 
   const data = [
-    "https://plus.unsplash.com/premium_photo-1729688320703-acff8e51b661?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1729710877242-6305c22c18b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1729552048052-24a21a7821ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    {
+      link: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "COMMERCIAL CLEANING SERVICES",
+    },
+    {
+      link: "https://plus.unsplash.com/premium_photo-1683141112334-d7d404f6e716?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "OFFICE CLEANING SERVICES",
+    },
+    {
+      link: "https://plus.unsplash.com/premium_photo-1663045721481-d31e9c549e8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "CARPET CLEANING SERVICES",
+    },
+    {
+      link: "https://plus.unsplash.com/premium_photo-1663045721481-d31e9c549e8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "CARPET CLEANING SERVICES",
+    },
+    {
+      link: "https://plus.unsplash.com/premium_photo-1661662917928-b1a42a08d094?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "JANITORIAL CLEANING SERVICES",
+    },
+    {
+      link: "https://plus.unsplash.com/premium_photo-1661662860714-7ea91a565bf9?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "WASHROOM CLEANING SERVICES",
+    },
+    {
+      link: "https://plus.unsplash.com/premium_photo-1664910289500-22a90f2527bb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "PROPERTY MAINTENANCE SERVICES",
+    },
+    {
+      link: "https://plus.unsplash.com/premium_photo-1726761637367-afdcd05c2da6?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "HARD FLOOR MAINTENANCE SERVICES",
+    },
+    {
+      link: "https://images.unsplash.com/photo-1690068023694-053da714f95f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "GRASS CUTTING SERVCES",
+    },
+    {
+      link: "https://images.unsplash.com/photo-1438109382753-8368e7e1e7cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "TREE & GARDEN MAINTENANCE SERVICES",
+    },
+    
   ];
 
   return (
@@ -77,14 +115,14 @@ export function Slider(props: PropType) {
             <div className="flex-[0_0_70%] transform-gpu pl-4" key={index}>
               <div className="">
                 <Image
-                  src={item}
+                  src={item.link}
                   height={400}
                   width={500}
                   alt="sd"
-                  className="rounded-2xl border-0 object-cover h-full w-full"
+                  className="rounded-2xl border-0 object-cover h-[350px] w-[600px]"
                 />
-                <div className="absolute top-0 left-[15px] w-[calc(100%-15px)] h-full  flex items-center justify-center bg-black bg-opacity-20 text-white rounded-2xl">
-                  Text
+                <div className="absolute top-0 left-[15px] w-[calc(100%-15px)] h-full  flex items-end justify-center bg-black bg-opacity-40 text-white rounded-2xl font-bold text-xl py-4">
+                  {item.title}
                 </div>
               </div>
             </div>

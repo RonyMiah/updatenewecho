@@ -27,20 +27,20 @@ const ServiceCard = () => {
           </div>
         </Link>
         {/* Card 3 */}
-        <Link to="3" spy={true} smooth={true} offset={-100} duration={500}>
+        {/* <Link to="3" spy={true} smooth={true} offset={-100} duration={500}>
           <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
             <span className="text-red-500 font-semibold hover:text-white">
               03
             </span>
             <h3 className="text-lg font-bold mt-2">WINDOW CLEANING SERVICES</h3>
           </div>
-        </Link>
+        </Link> */}
 
         {/* Card 4 */}
         <Link to="4" spy={true} smooth={true} offset={-100} duration={500}>
           <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
             <span className="text-red-500 font-semibold hover:text-white">
-              04
+              03
             </span>
             <h3 className="text-lg font-bold mt-2">CARPET CLEANING SERVICES</h3>
           </div>
@@ -49,7 +49,7 @@ const ServiceCard = () => {
         <Link to="5" spy={true} smooth={true} offset={-100} duration={500}>
           <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
             <span className="text-red-500 font-semibold hover:text-white">
-              05
+              04
             </span>
             <h3 className="text-lg font-bold mt-2">
               JANITORIAL CLEANING SERVICES
@@ -60,7 +60,7 @@ const ServiceCard = () => {
         <Link to="6" spy={true} smooth={true} offset={-100} duration={500}>
           <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
             <span className="text-red-500 font-semibold hover:text-white">
-              06
+              05
             </span>
             <h3 className="text-lg font-bold mt-2">
               WASHROOM CLEANING SERVICES
@@ -71,7 +71,7 @@ const ServiceCard = () => {
         <Link to="7" spy={true} smooth={true} offset={-100} duration={500}>
           <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
             <span className="text-red-500 font-semibold hover:text-white">
-              07
+              06
             </span>
             <h3 className="text-lg font-bold mt-2">PROPERTY MAINTENANCE</h3>
           </div>
@@ -80,7 +80,7 @@ const ServiceCard = () => {
         <Link to="8" spy={true} smooth={true} offset={-100} duration={500}>
           <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
             <span className="text-red-500 font-semibold hover:text-white">
-              08
+              07
             </span>
             <h3 className="text-lg font-bold mt-2">HARD FLOOR MAINTENANCE</h3>
           </div>
@@ -89,7 +89,7 @@ const ServiceCard = () => {
         <Link to="9" spy={true} smooth={true} offset={-100} duration={500}>
           <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
             <span className="text-red-500 font-semibold hover:text-white">
-              09
+              08
             </span>
             <h3 className="text-lg font-bold mt-2">GRASS CUTTING SERVCES</h3>
           </div>
@@ -98,7 +98,7 @@ const ServiceCard = () => {
         <Link to="10" spy={true} smooth={true} offset={-150} duration={500}>
           <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
             <span className="text-red-500 font-semibold hover:text-white">
-              10
+              09
             </span>
             <h3 className="text-lg font-bold mt-2">
               TREE & GARDEN MAINTENANCE

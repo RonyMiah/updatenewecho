@@ -8,6 +8,7 @@ import {
   FaMapMarkerAlt,
   FaArrowRight,
   FaTree,
+  FaWhatsappSquare,
 } from "react-icons/fa";
 import {  MdOutlineCleanHands } from "react-icons/md";
 
@@ -79,7 +80,11 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex items-center space-x-2">
             <FaPhone className="text-green-500" />
-            <p> +60330053856 , 03-3005 3856</p>
+            <p> 0330053856 , </p>
+          </div>
+          <div className="flex items-center space-x-2 gap-2">
+            <FaWhatsappSquare className="text-green-500 size-6" />
+            0162606040
           </div>
           <div className="flex items-center space-x-2">
             <FaEnvelope className="text-green-500" />

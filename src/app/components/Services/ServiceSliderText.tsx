@@ -40,6 +40,7 @@ import carousel10_3 from "@/assets/services/carosel10-3.jpg";
 import Image from "next/image";
 import { Card, CardContent } from "@/Components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/Components/ui/carousel";
+import BackToTopButton from "../BackToTopButton/BackToTopButton";
 
 const ServiceSlideText = () => {
   // Carousel autoplay setup
@@ -84,48 +85,6 @@ const ServiceSlideText = () => {
           className="lg:container md:container justify-center items-center lg:px-28 md:px-10 sm:px-8 sx:px-6 flex sx:flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap "
           id="1"
         >
-          {/* Carousel Section */}
-          <div>
-            <div className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px] lg:my-12 md:my-12 sm:my-6 sx:my-4">
-              <Carousel
-                plugins={[plugin1.current]}
-                className="relative"
-                onMouseEnter={plugin1.current.stop}
-                onMouseLeave={plugin1.current.reset}
-              >
-                <CarouselContent>
-                  {[carousel1_1, carousel1_2, carousel1_3].map(
-                    (singleImage, index) => (
-                      <CarouselItem key={index}>
-                        <div className="p-1">
-                          <Card>
-                            <CardContent className="flex items-center justify-center p-0">
-                              <Image
-                                src={singleImage}
-                                alt={`Slide ${index + 1}`}
-                                className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px]"
-                              />
-                            </CardContent>
-                          </Card>
-                        </div>
-                      </CarouselItem>
-                    )
-                  )}
-                </CarouselContent>
-
-                {/* Position left arrow */}
-                <CarouselPrevious className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-red-600 p-2 rounded-full hover:bg-red-600 hover:text-white">
-                  <MdOutlineKeyboardArrowLeft />
-                </CarouselPrevious>
-
-                {/* Position right arrow */}
-                <CarouselNext className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 hover:bg-red-600 hover:text-white text-red-600 p-2 rounded-full">
-                  <MdOutlineKeyboardArrowRight />
-                </CarouselNext>
-              </Carousel>
-            </div>
-          </div>
-
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
             <h4 className="text-4xl text-red-600 font-bold">01</h4>
@@ -186,6 +145,48 @@ const ServiceSlideText = () => {
               Commercial Cleaning <FaArrowUp />
             </button>
           </div>
+
+          {/* Carousel Section */}
+          <div>
+            <div className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px] lg:my-12 md:my-12 sm:my-6 sx:my-4">
+              <Carousel
+                plugins={[plugin1.current]}
+                className="relative"
+                onMouseEnter={plugin1.current.stop}
+                onMouseLeave={plugin1.current.reset}
+              >
+                <CarouselContent>
+                  {[carousel1_1, carousel1_2, carousel1_3].map(
+                    (singleImage, index) => (
+                      <CarouselItem key={index}>
+                        <div className="p-1">
+                          <Card>
+                            <CardContent className="flex items-center justify-center p-0">
+                              <Image
+                                src={singleImage}
+                                alt={`Slide ${index + 1}`}
+                                className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px]"
+                              />
+                            </CardContent>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                    )
+                  )}
+                </CarouselContent>
+
+                {/* Position left arrow */}
+                <CarouselPrevious className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-red-600 p-2 rounded-full hover:bg-red-600 hover:text-white">
+                  <MdOutlineKeyboardArrowLeft />
+                </CarouselPrevious>
+
+                {/* Position right arrow */}
+                <CarouselNext className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 hover:bg-red-600 hover:text-white text-red-600 p-2 rounded-full">
+                  <MdOutlineKeyboardArrowRight />
+                </CarouselNext>
+              </Carousel>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -197,6 +198,47 @@ const ServiceSlideText = () => {
           className="lg:container md:container justify-center items-center lg:px-28 md:px-10 sm:px-8 sx:px-6 flex sx:flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap "
           id="2"
         >
+          {/* Carousel Section */}
+          <div>
+            <div className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px] lg:my-12 md:my-12 sm:my-6 sx:my-4">
+              <Carousel
+                plugins={[plugin2.current]}
+                className="relative"
+                onMouseEnter={plugin2.current.stop}
+                onMouseLeave={plugin2.current.reset}
+              >
+                <CarouselContent>
+                  {[carousel2_1, carousel2_2, carousel2_3].map(
+                    (singleImage, index) => (
+                      <CarouselItem key={index}>
+                        <div className="p-1">
+                          <Card>
+                            <CardContent className="flex items-center justify-center p-0">
+                              <Image
+                                src={singleImage}
+                                alt={`Slide ${index + 1}`}
+                                className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px]"
+                              />
+                            </CardContent>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                    )
+                  )}
+                </CarouselContent>
+
+                {/* Position left arrow */}
+                <CarouselPrevious className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-red-600 p-2 rounded-full hover:bg-red-600 hover:text-white">
+                  <MdOutlineKeyboardArrowLeft />
+                </CarouselPrevious>
+
+                {/* Position right arrow */}
+                <CarouselNext className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 hover:bg-red-600 hover:text-white text-red-600 p-2 rounded-full">
+                  <MdOutlineKeyboardArrowRight />
+                </CarouselNext>
+              </Carousel>
+            </div>
+          </div>
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
             <h4 className="text-4xl text-red-600 font-bold">02</h4>
@@ -261,60 +303,18 @@ const ServiceSlideText = () => {
               Office Cleaning <FaArrowUp />
             </button>
           </div>
-
-          {/* Carousel Section */}
-          <div>
-            <div className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px] lg:my-12 md:my-12 sm:my-6 sx:my-4">
-              <Carousel
-                plugins={[plugin2.current]}
-                className="relative"
-                onMouseEnter={plugin2.current.stop}
-                onMouseLeave={plugin2.current.reset}
-              >
-                <CarouselContent>
-                  {[carousel2_1, carousel2_2, carousel2_3].map(
-                    (singleImage, index) => (
-                      <CarouselItem key={index}>
-                        <div className="p-1">
-                          <Card>
-                            <CardContent className="flex items-center justify-center p-0">
-                              <Image
-                                src={singleImage}
-                                alt={`Slide ${index + 1}`}
-                                className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px]"
-                              />
-                            </CardContent>
-                          </Card>
-                        </div>
-                      </CarouselItem>
-                    )
-                  )}
-                </CarouselContent>
-
-                {/* Position left arrow */}
-                <CarouselPrevious className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-red-600 p-2 rounded-full hover:bg-red-600 hover:text-white">
-                  <MdOutlineKeyboardArrowLeft />
-                </CarouselPrevious>
-
-                {/* Position right arrow */}
-                <CarouselNext className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 hover:bg-red-600 hover:text-white text-red-600 p-2 rounded-full">
-                  <MdOutlineKeyboardArrowRight />
-                </CarouselNext>
-              </Carousel>
-            </div>
-          </div>
         </div>
       </div>
 
       {/* Section 3 */}
-      <div id="03">
+      {/* <div id="03">
         <hr className="border-[1px] border-red-500 my-2 " />
-        {/* ServiceSlide 03 */}
+        
         <div
           className="lg:container md:container justify-center items-center lg:px-28 md:px-10 sm:px-8 sx:px-6 flex sx:flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap "
           id="3"
         >
-          {/* Carousel Section */}
+      
           <div>
             <div className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px] lg:my-12 md:my-12 sm:my-6 sx:my-4">
               <Carousel
@@ -343,12 +343,12 @@ const ServiceSlideText = () => {
                   )}
                 </CarouselContent>
 
-                {/* Position left arrow */}
+                
                 <CarouselPrevious className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-red-600 p-2 rounded-full hover:bg-red-600 hover:text-white">
                   <MdOutlineKeyboardArrowLeft />
                 </CarouselPrevious>
 
-                {/* Position right arrow */}
+                
                 <CarouselNext className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 hover:bg-red-600 hover:text-white text-red-600 p-2 rounded-full">
                   <MdOutlineKeyboardArrowRight />
                 </CarouselNext>
@@ -356,7 +356,7 @@ const ServiceSlideText = () => {
             </div>
           </div>
 
-          {/* Text Section */}
+          
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
             <h4 className="text-4xl text-red-600 font-bold">03</h4>
             <h1 className="text-3xl font-bold text-[#32297C] my-2">
@@ -407,7 +407,7 @@ const ServiceSlideText = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Section 4 */}
       <div id="04">
@@ -419,7 +419,7 @@ const ServiceSlideText = () => {
         >
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
-            <h4 className="text-4xl text-red-600 font-bold">04</h4>
+            <h4 className="text-4xl text-red-600 font-bold">03</h4>
             <h1 className="text-3xl font-bold text-[#32297C] my-2">
               CARPET CLEANING SERVICES
             </h1>
@@ -560,7 +560,7 @@ const ServiceSlideText = () => {
 
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
-            <h4 className="text-4xl text-red-600 font-bold">05</h4>
+            <h4 className="text-4xl text-red-600 font-bold">04</h4>
             <h1 className="text-3xl font-bold text-[#32297C] my-2">
               JANITORIAL CLEANING SERVICES
             </h1>
@@ -620,7 +620,7 @@ const ServiceSlideText = () => {
         >
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
-            <h4 className="text-4xl text-red-600 font-bold">06</h4>
+            <h4 className="text-4xl text-red-600 font-bold">05</h4>
             <h1 className="text-3xl font-bold text-[#32297C] my-2">
               WASHROOM CLEANING SERVICES
             </h1>
@@ -756,7 +756,7 @@ const ServiceSlideText = () => {
 
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
-            <h4 className="text-4xl text-red-600 font-bold">07</h4>
+            <h4 className="text-4xl text-red-600 font-bold">06</h4>
             <h1 className="text-3xl font-bold text-[#32297C] my-2">
               PROPERTY MAINTENANCE SERVICES
             </h1>
@@ -818,7 +818,7 @@ const ServiceSlideText = () => {
         >
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
-            <h4 className="text-4xl text-red-600 font-bold">08</h4>
+            <h4 className="text-4xl text-red-600 font-bold">07</h4>
             <h1 className="text-3xl font-bold text-[#32297C] my-2">
               HARD FLOOR MAINTENANCE SERVICES
             </h1>
@@ -983,7 +983,7 @@ const ServiceSlideText = () => {
 
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
-            <h4 className="text-4xl text-red-600 font-bold">09</h4>
+            <h4 className="text-4xl text-red-600 font-bold">08</h4>
             <h1 className="text-3xl font-bold text-[#32297C] my-2">
               GRASS CUTTING SERVCES
             </h1>
@@ -1038,7 +1038,7 @@ const ServiceSlideText = () => {
         >
           {/* Text Section */}
           <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
-            <h4 className="text-4xl text-red-600 font-bold">10</h4>
+            <h4 className="text-4xl text-red-600 font-bold">09</h4>
             <h1 className="text-3xl font-bold text-[#32297C] my-2">
               TREE & GARDEN MAINTENANCE SERVICES
             </h1>
@@ -1129,6 +1129,7 @@ const ServiceSlideText = () => {
           </div>
         </div>
       </div>
+      <BackToTopButton />
     </>
   );
 };

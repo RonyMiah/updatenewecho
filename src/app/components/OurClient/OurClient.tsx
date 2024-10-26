@@ -8,9 +8,11 @@ import logo4 from "@/assets/company/p-4.jpeg";
 import logo5 from "@/assets/company/p-5.jpeg";
 import logo6 from "@/assets/company/p-6.jpg";
 import logo7 from "@/assets/company/p-7.jpg";
+import logo8 from "@/assets/company/p-8.jpg";
+import logo9 from "@/assets/company/p-9.png";
 
 const OurClient = () => {
-  const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
+  const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7,logo8, logo9];
 
   return (
     <div className="md:px-16 lg:px-16 my-6">

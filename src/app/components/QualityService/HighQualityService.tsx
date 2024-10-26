@@ -4,6 +4,7 @@ import React from 'react'
 // import Lottie from 'lottie-react';
 // import highClean from '@/assets/animation/highclean.json'
 import highCleaning from '@/assets/highclean.png'
+import Link from 'next/link';
 
 const HighQualityService = () => {
   return (
@@ -29,9 +30,11 @@ const HighQualityService = () => {
           <h2 className="text-3xl lg:text-4xl font-bold mt-2">
             High-Quality and Friendly Services at Fair Prices
           </h2>
-          <button className="mt-6 px-6 py-3 bg-white text-[#81C123] rounded-xl hover:bg-blue-700 hover:text-white transition-all font-bold ">
-            Contact Us
-          </button>
+          <Link href="/contacts">
+            <button className="mt-6 px-6 py-3 bg-white text-[#81C123] rounded-xl hover:bg-blue-700 hover:text-white transition-all font-bold ">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
     </div>

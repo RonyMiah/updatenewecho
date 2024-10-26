@@ -5,6 +5,8 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import { GiLoveMystery } from "react-icons/gi";
+import Link from "next/link";
+
 
 const WhatMakesUsDifferent: React.FC = () => {
   return (
@@ -74,9 +76,11 @@ const WhatMakesUsDifferent: React.FC = () => {
 
           {/* Button */}
           <div>
-            <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded transition flex justify-center items-center gap-2">
-              Quick Contact <FaArrowRight />
-            </button>
+            <Link href="/contacts">
+              <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded transition flex justify-center items-center gap-2">
+                Quick Contact <FaArrowRight />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
