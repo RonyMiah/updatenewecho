@@ -8,13 +8,13 @@ import aboutBannerShape from "@/assets/bg-slider-shape-2.png"
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="bg-[#F2F5F7] ">
+    <div className="bg-[#33297C] ">
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row items-center">
         {/* Left text Section */}
         <div className="lg:w-1/2 text-center lg:text-left mx-auto">
-          <h1 className="text-6xl font-bold text-[#2563EB] mb-8">About Us</h1>
-          <p className="text-gray-700 mb-6 text-xl ">
+          <h1 className="text-6xl font-bold text-white mb-8">About Us</h1>
+          <p className="text-white mb-6 text-xl ">
             At, NEW ECO, we understand that establishing positive and effective
             leadership is a key factor in providing our customers with excellent
             services. We also implement Health & Safety and Recycling Policies
@@ -45,7 +45,7 @@ const AboutUs: React.FC = () => {
         alt="Cleaning Service"
         width={900}
         height={900}
-        className="w-full h-auto object-cover lg:-mt-40 md:-mt-24"
+        className="w-full h-auto object-cover lg:-mt-32 md:-mt-24"
       />
     </div>
   );
