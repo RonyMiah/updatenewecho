@@ -1,5 +1,6 @@
 // src/components/ContactSection.tsx
 
+import Link from "next/link";
 import React from "react";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { MdLocationOn, MdCall, MdEmail } from "react-icons/md"; // Icons from react-icons
@@ -42,12 +43,22 @@ const ContactSection: React.FC = () => {
             <MdCall className="text-blue-500 text-6xl mr-4" />
             <div>
               <h3 className="font-semibold text-2xl">Telephone number</h3>
-              <p className="text-gray-500">
-                0330053856 ,
+              <p className="text-blue-500">
+                
+                  +60330053856
+                
+                ,
                 <br />
-                <div className="flex justify-center items-center gap-1">
-                  <FaWhatsappSquare className= "text-green-500 size-6" />
-                  0162606040
+                <div className="">
+                  <Link
+                    href="https://wa.me/60162606040"
+                    className="text-green-500 flex justify-center items-center gap-1  hover:underline "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaWhatsappSquare className="text-green-500 size-6" />
+                    +60162606040
+                  </Link>
                 </div>
               </p>
             </div>

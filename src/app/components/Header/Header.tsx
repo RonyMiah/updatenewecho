@@ -339,10 +339,15 @@ export default function Header() {
                           ? "danger"
                           : "foreground"
                       }
-                      href="#"
+                      href={item.path}
                       //   size="lg"
                     >
-                      {item.name}
+                      <Link
+                        onClick={() => setIsMenuOpen(false)}
+                        href={item.path}
+                      >
+                        {item.name}
+                      </Link>
                     </Link>
                   </NavbarMenuItem>
                 )}

@@ -187,10 +187,17 @@ const ContactForm = () => {
             </p>
             <p className="flex justify-start items-center gap-2">
               <IoMdPhonePortrait className="text-red-500 text-2xl" />
-              0330053856 ,
+              +60330053856 ,
               <div className="flex justify-center items-center gap-1">
-                <FaWhatsappSquare className="text-green-500 size-6" />
-                0162606040
+                <Link
+                  href="https://wa.me/60162606040"
+                  className="text-green-500 flex justify-center items-center gap-1  hover:underline "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsappSquare className="text-green-500 size-6" />
+                  +60162606040
+                </Link>
               </div>
             </p>
           </div>

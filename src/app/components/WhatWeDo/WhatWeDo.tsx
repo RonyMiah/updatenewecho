@@ -23,8 +23,7 @@ const WhatWeDo: React.FC = () => {
           How does our <span className="text-blue-600">solution work?</span>
         </h2>
         <p className="text-gray-600 mb-12 max-w-xl mx-auto">
-          Duis dapibus elit ut elit interdum, non tempus ipsum blandit. Ut
-          malesuada lacus nibh, sit amet varius metus mattis nec.
+          When your environment is clean you fell happy, motevated and healthy.
         </p>
 
         {/* Cards Section */}

@@ -90,11 +90,18 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex items-center space-x-2">
             <FaPhone className="text-green-500" />
-            <p> 0330053856 , </p>
+            <p> +60330053856 , </p>
           </div>
           <div className="flex items-center space-x-2 gap-2">
-            <FaWhatsappSquare className="text-green-500 size-6" />
-            0162606040
+            <Link
+              href="https://wa.me/60162606040"
+              className="text-green-500 flex justify-center items-center gap-1  hover:underline "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsappSquare className="text-green-500 size-6" />
+              +60162606040
+            </Link>
           </div>
           <div className="flex items-center space-x-2">
             <FaEnvelope className="text-green-500" />

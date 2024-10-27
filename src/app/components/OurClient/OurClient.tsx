@@ -24,7 +24,7 @@ const OurClient = () => {
         {logos.map((logo, index) => (
           <div
             key={index}
-            className="sx:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 p-4 flex justify-center items-center"
+            className="sx:w-1/1 sm:w-1/3 md:w-1/4 lg:w-1/6 p-4 flex justify-center items-center"
           >
             <Image
               src={logo}
