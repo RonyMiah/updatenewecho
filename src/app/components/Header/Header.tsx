@@ -55,11 +55,12 @@ export default function Header() {
 
   return (
     <>
-      <div className="bg-blue-900   ">
+      <div className="  ">
         <Navbar
           isBordered
           isMenuOpen={isMenuOpen}
           onMenuOpenChange={setIsMenuOpen}
+          className="!bg-[#608BC1] shadow-sm "
           maxWidth="full"
           classNames={{
             item: [
@@ -86,6 +87,7 @@ export default function Header() {
 
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand as={Link} href={"/"}>
+            
               <AcmeLogo />
             </NavbarBrand>
           </NavbarContent>
@@ -103,13 +105,13 @@ export default function Header() {
                   {menu.menu ? (
                     <Dropdown key={menu.name}>
                       <NavbarItem
-                        className="hidden sm:flex"
+                        className="hidden sm:flex "
                         isActive={pathname === menu.path}
                       >
                         <DropdownTrigger>
                           <Button
                             disableRipple
-                            className="p-0 bg-transparent data-[hover=true]:bg-transparent text-base"
+                            className="p-0 bg-transparent data-[hover=true]:bg-transparent text-white text-md"
                             endContent={<IoChevronDownSharp />}
                             radius="none"
                             variant="light"
@@ -202,7 +204,7 @@ export default function Header() {
                   ) : (
                     <NavbarItem
                       key={menu.name}
-                      className="hidden sm:flex px-8"
+                      className="hidden sm:flex px-8 text-white"
                       isActive={pathname === menu.path}
                     >
                       <Link href={menu.path}>{menu.name}</Link>
@@ -212,7 +214,13 @@ export default function Header() {
               );
             })}
             <NavbarItem>
-              <Button as={Link} color="success" href="/contacts" variant="flat">
+              <Button
+                as={Link}
+                // color="success"
+                href="/contacts"
+                variant="flat"
+                className="text-white bg-[#133E87]"
+              >
                 Contact
               </Button>
             </NavbarItem>
