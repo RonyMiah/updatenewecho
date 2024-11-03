@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     siteName: "Your Cleaning Service",
     images: [
       {
-        url: "https://newecocleaning.com/seo.jpg",
+        url: "https://newecocleaning.com/seo.png",
         width: 1200,
         height: 630,
         alt: "Professional cleaning service in action",
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     title: "Top Cleaning Services | Spotless Spaces for Home & Office",
     description:
       "Experience the difference with our professional cleaning services for residential and commercial spaces. Satisfaction guaranteed!",
-    images: ["https://newecocleaning.com/seo.jpg"],
+    images: ["https://newecocleaning.com/seo.png"],
   },
 };
 
