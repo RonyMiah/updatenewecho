@@ -44,10 +44,7 @@ const ContactSection: React.FC = () => {
             <div>
               <h3 className="font-semibold text-2xl">Telephone number</h3>
               <p className="text-blue-500">
-                
-                  +60330053856
-                
-                ,
+                +60330053856 ,
                 <br />
                 <div className="">
                   <Link
@@ -69,7 +66,7 @@ const ContactSection: React.FC = () => {
             <MdEmail className="text-blue-500 text-6xl mr-4" />
             <div>
               <h3 className="font-semibold text-lg"> Mail Address </h3>
-              <p className="text-gray-500">Info@yourmail.org</p>
+              <p className="text-gray-500">contact@newecocleaning.com</p>
             </div>
           </div>
         </div>

@@ -76,10 +76,7 @@ export function Slider(props: PropType) {
       link: "https://plus.unsplash.com/premium_photo-1663045721481-d31e9c549e8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "CARPET CLEANING SERVICES",
     },
-    {
-      link: "https://plus.unsplash.com/premium_photo-1663045721481-d31e9c549e8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "CARPET CLEANING SERVICES",
-    },
+   
     {
       link: "https://plus.unsplash.com/premium_photo-1661662917928-b1a42a08d094?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "JANITORIAL CLEANING SERVICES",

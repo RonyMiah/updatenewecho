@@ -177,12 +177,12 @@ const ContactForm = () => {
             <p>51200, Kuala Lampur, Malaysia</p>
             <p className="pt-6 flex justify-start items-center gap-2">
               <MdOutlineMailOutline className="text-red-500 text-2xl" />
-              test@newechocleaning.com
+              contact@newecocleaning.com
             </p>
             <p className="flex justify-start items-center gap-2">
               <CgWebsite className="text-red-500 text-2xl" />
-              <a href="https://www.newechocleaning.com" className="underline">
-                https://www.newechocleaning.com
+              <a href="https://www.newecocleaning.com" className="underline">
+                https://www.newecocleaning.com
               </a>
             </p>
             <p className="flex justify-start items-center gap-2">
@@ -223,7 +223,7 @@ const ContactForm = () => {
           {/* Company Profile Button */}
           <div className="flex justify-start mt-6">
             <Link
-              href="https://drive.google.com/file/d/1ORlxjw4H7_kJZ7Id2HqaciCWcV1k2N-N/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ZUfpv7QBMD4ChhDEYwVL8axTtcx48g8S/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
