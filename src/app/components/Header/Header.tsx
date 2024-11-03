@@ -87,7 +87,6 @@ export default function Header() {
 
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand as={Link} href={"/"}>
-            
               <AcmeLogo />
             </NavbarBrand>
           </NavbarContent>
@@ -132,14 +131,18 @@ export default function Header() {
                           key="autoscaling"
                           //   startContent={icons.scale}
                         >
-                          <Link href={"/services#01"}>Commercial Cleaning</Link>
+                          <Link prefetch={true} href={"/services#01"}>
+                            Commercial Cleaning
+                          </Link>
                         </DropdownItem>
 
                         <DropdownItem
                           key="usage_metrics"
                           //   startContent={icons.activity}
                         >
-                          <Link href={"/services#02"}>Office Cleaning</Link>
+                          <Link prefetch={true} href={"/services#02"}>
+                            Office Cleaning
+                          </Link>
                         </DropdownItem>
 
                         {/* <DropdownItem
@@ -153,25 +156,31 @@ export default function Header() {
                           key="99_uptime"
                           //   startContent={icons.server}
                         >
-                          <Link href={"/services#04"}>Carpet Cleaning</Link>
+                          <Link prefetch={true} href={"/services#04"}>
+                            Carpet Cleaning
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          <Link href={"/services#05"}>Janitorial Cleaning</Link>
+                          <Link prefetch={true} href={"/services#05"}>
+                            Janitorial Cleaning
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          <Link href={"/services#06"}>Washroom Cleaning</Link>
+                          <Link prefetch={true} href={"/services#06"}>
+                            Washroom Cleaning
+                          </Link>
                         </DropdownItem>
                         <DropdownItem
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          <Link href={"/services#07"}>
+                          <Link prefetch={true} href={"/services#07"}>
                             Property Maintenance
                           </Link>
                         </DropdownItem>
@@ -179,7 +188,7 @@ export default function Header() {
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          <Link href={"/services#08"}>
+                          <Link prefetch={true} href={"/services#08"}>
                             Hard Floor Maintenance
                           </Link>
                         </DropdownItem>
@@ -187,7 +196,7 @@ export default function Header() {
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          <Link href={"/services#09"}>
+                          <Link prefetch={true} href={"/services#09"}>
                             Grass Cutting Services
                           </Link>
                         </DropdownItem>
@@ -195,7 +204,7 @@ export default function Header() {
                           key="supreme_support"
                           //   startContent={icons.user}
                         >
-                          <Link href={"/services#010"}>
+                          <Link prefetch={true} href={"/services#010"}>
                             Tree & Garden Maintenance
                           </Link>
                         </DropdownItem>
