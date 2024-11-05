@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import { FaWhatsappSquare } from "react-icons/fa";
+import { FaMobileScreen } from "react-icons/fa6";
 import { MdLocationOn, MdCall, MdEmail } from "react-icons/md"; // Icons from react-icons
 
 const ContactSection: React.FC = () => {
@@ -42,14 +43,16 @@ const ContactSection: React.FC = () => {
           <div className="flex items-center p-10 border rounded-xl shadow-sm">
             <MdCall className="text-blue-500 text-6xl mr-4" />
             <div>
-              <h3 className="font-semibold text-2xl">Telephone number</h3>
+              <h3 className="font-semibold text-2xl">Contact Number</h3>
               <p className="text-blue-500">
-                +60330053856 ,
-                <br />
+                <div className="flex justify-center items-center gap-1 py-2">
+                  <FaMobileScreen className="text-red-500 size-6" />
+                  +60330053856,
+                </div>
                 <div className="">
                   <Link
                     href="https://wa.me/60162606040"
-                    className="text-green-500 flex justify-center items-center gap-1  hover:underline "
+                    className="text-green-500 flex justify-center items-center gap-2  hover:underline "
                     target="_blank"
                     rel="noopener noreferrer"
                   >

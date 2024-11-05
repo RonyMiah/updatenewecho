@@ -187,11 +187,13 @@ const ContactForm = () => {
             </p>
             <p className="flex justify-start items-center gap-2">
               <IoMdPhonePortrait className="text-red-500 text-2xl" />
-              +60330053856 ,
+              +60330053856
+            </p>
+            <p className="flex justify-start items-center gap-2">
               <div className="flex justify-center items-center gap-1">
                 <Link
                   href="https://wa.me/60162606040"
-                  className="text-green-500 flex justify-center items-center gap-1  hover:underline "
+                  className="text-green-500 flex justify-center items-center gap-2  hover:underline "
                   target="_blank"
                   rel="noopener noreferrer"
                 >

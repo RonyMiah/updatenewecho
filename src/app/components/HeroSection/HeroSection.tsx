@@ -67,7 +67,7 @@ const HeroSection: React.FC = () => {
               />
             </div>
             <span className="bg-green-500 text-white px-2 py-1 rounded-full text-xs">
-              12+
+              15+
             </span>
             <span className="text-white">Happy Clients</span>
           </div>

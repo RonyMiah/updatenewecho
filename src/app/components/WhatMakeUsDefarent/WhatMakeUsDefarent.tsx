@@ -41,7 +41,7 @@ const WhatMakesUsDifferent: React.FC = () => {
               <GiLoveMystery className="text-green-500 text-4xl lg:text-6xl ring-1 p-2 lg:p-4 rounded-full" />
               <div>
                 <div className="text-start text-xl md:text-2xl font-bold text-blue-600">
-                  2000+
+                  15+
                 </div>
                 <div className="text-start text-gray-500 text-lg md:text-xl font-bold">
                   Clients
@@ -65,7 +65,7 @@ const WhatMakesUsDifferent: React.FC = () => {
               <FaPeopleGroup className="text-green-500 text-4xl lg:text-6xl ring-1 p-2 lg:p-4 rounded-full" />
               <div>
                 <div className="text-start text-xl md:text-2xl font-bold text-blue-600">
-                  800+
+                  50+
                 </div>
                 <div className="text-start text-gray-500 text-lg md:text-xl font-bold">
                   Employees
