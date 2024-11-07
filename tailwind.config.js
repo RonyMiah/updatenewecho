@@ -11,6 +11,7 @@ export const content = [
 ];
 export const theme = {
   extend: {
+    
     colors: {
       primary: "#ff8901",
       secoundary: "#fb923c",
@@ -50,6 +51,14 @@ export const theme = {
         4: "hsl(var(--chart-4))",
         5: "hsl(var(--chart-5))",
       },
+    },
+
+    fontFamily: {
+      'monoton': ['Monoton', 'sans-serif'],
+      'sourgummy': [ 'Sour Gummy', 'sans-serif']
+    },
+    fontWeight: {
+       '400': '400'
     },
     zIndex: {
       60: "60",

@@ -20,6 +20,7 @@ import Link from "next/link";
 import { IoChevronDownSharp } from "react-icons/io5";
 import { usePathname } from "next/navigation";
 import logo from "@/assets/logo.png";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,6 +95,22 @@ export default function Header() {
           <NavbarContent className="hidden sm:flex gap-4" justify="end">
             <NavbarBrand as={Link} href={"/"}>
               <AcmeLogo />
+              <div className="flex flex-wrap ">
+                <div className="hidden md:block lg:block">
+                  <span className=" ms-2 font-monoton text-[#201558] font-medium not-italic text-2xl">
+                    New Eco Resources BM. SDN. BHD.
+                  </span>
+                  <span className="mt-2 ms-1 text-[#201558] text-base">
+                    ( Company No : <span className="font-bold">1497422-X</span>{" "}
+                    )
+                  </span>
+                </div>
+                <div className="hidden md:block lg:block">
+                  <p className="ms-2 font-sourgummy text-white font-medium">
+                    Excellent Cleaning Operation Service, Always Make New
+                  </p>
+                </div>
+              </div>
             </NavbarBrand>
           </NavbarContent>
 
@@ -213,7 +230,7 @@ export default function Header() {
                   ) : (
                     <NavbarItem
                       key={menu.name}
-                      className="hidden sm:flex px-8 text-white"
+                      className="hidden sm:flex px-8 text-white font-extrabold"
                       isActive={pathname === menu.path}
                     >
                       <Link href={menu.path}>{menu.name}</Link>
@@ -232,6 +249,15 @@ export default function Header() {
               >
                 Contact
               </Button>
+              <Link
+                href="https://wa.me/60162606040"
+                className="text-green-500 flex justify-center items-center gap-2  hover:underline "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsappSquare className="text-green-500 size-9 gap-2 ms-2" />
+                
+              </Link>
             </NavbarItem>
           </NavbarContent>
 
@@ -247,7 +273,7 @@ export default function Header() {
                       <DropdownTrigger>
                         <Button
                           disableRipple
-                          className="p-0 bg-transparent data-[hover=true]:bg-transparent text-lg"
+                          className="p-0 bg-transparent data-[hover=true]:bg-transparent text-lg font-extrabold"
                           endContent={<IoChevronDownSharp />}
                           radius="none"
                           variant="light"
