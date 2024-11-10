@@ -61,7 +61,7 @@ export default function Header() {
           isBordered
           isMenuOpen={isMenuOpen}
           onMenuOpenChange={setIsMenuOpen}
-          className="!bg-[#608BC1] shadow-sm "
+          className="!bg-white shadow-sm "
           maxWidth="full"
           classNames={{
             item: [
@@ -97,18 +97,19 @@ export default function Header() {
               <AcmeLogo />
               <div className="flex flex-wrap ">
                 <div className="hidden md:block lg:block">
-                  <span className=" ms-2 font-monoton text-[#201558] font-medium not-italic text-2xl">
-                    New Eco Resources BM. SDN. BHD.
+                  <span className=" ms-2 font-extrabold text-[#201558]  text-3xl">
+                    NEW ECO RESOURCES{" "}
+                    <span className="text-lg">BM. SDN. BHD.</span>
                   </span>
-                  <span className="mt-2 ms-1 text-[#201558] text-base">
+                </div>
+                <div className="hidden md:block  lg:flex justify-center items-center ">
+                  <p className="ms-2 font-sourgummy text-[#E83713]  ">
+                    Excellent Cleaning Operation Service, Always Make New
+                  </p>
+                  <span className=" ms-6 -mt-3 text-[#201558] text-small">
                     ( Company No : <span className="font-bold">1497422-X</span>{" "}
                     )
                   </span>
-                </div>
-                <div className="hidden md:block lg:block">
-                  <p className="ms-2 font-sourgummy text-white font-medium">
-                    Excellent Cleaning Operation Service, Always Make New
-                  </p>
                 </div>
               </div>
             </NavbarBrand>
@@ -127,7 +128,7 @@ export default function Header() {
                         <DropdownTrigger>
                           <Button
                             disableRipple
-                            className="p-0 bg-transparent data-[hover=true]:bg-transparent text-white text-md"
+                            className="p-0 bg-transparent data-[hover=true]:bg-transparent text-[#33297C] hover:text-[#E83713] text-md font-bold"
                             endContent={<IoChevronDownSharp />}
                             radius="none"
                             variant="light"
@@ -230,7 +231,7 @@ export default function Header() {
                   ) : (
                     <NavbarItem
                       key={menu.name}
-                      className="hidden sm:flex px-8 text-white font-extrabold"
+                      className="hidden sm:flex px-8  text-[#33297C] hover:text-[#E83713] text-md font-bold "
                       isActive={pathname === menu.path}
                     >
                       <Link href={menu.path}>{menu.name}</Link>
@@ -245,7 +246,7 @@ export default function Header() {
                 // color="success"
                 href="/contacts"
                 variant="flat"
-                className="text-white bg-[#133E87]"
+                className="text-white bg-[#133E87] hover:!bg-[#ea2a04]"
               >
                 Contact
               </Button>
@@ -256,7 +257,6 @@ export default function Header() {
                 rel="noopener noreferrer"
               >
                 <FaWhatsappSquare className="text-green-500 size-9 gap-2 ms-2" />
-                
               </Link>
             </NavbarItem>
           </NavbarContent>

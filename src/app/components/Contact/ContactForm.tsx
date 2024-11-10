@@ -177,7 +177,7 @@ const ContactForm = () => {
             <p>51200, Kuala Lampur, Malaysia</p>
             <p className="pt-6 flex justify-start items-center gap-2">
               <MdOutlineMailOutline className="text-red-500 text-2xl" />
-              contact@newecocleaning.com
+              1ecoresources@gmail.com
             </p>
             <p className="flex justify-start items-center gap-2">
               <CgWebsite className="text-red-500 text-2xl" />

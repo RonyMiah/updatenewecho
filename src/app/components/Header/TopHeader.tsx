@@ -1,28 +1,19 @@
-import React from 'react'
+import React from "react";
+import Marquee from "react-fast-marquee";
 
 const TopHeader = () => {
   return (
-    <div>
-      <div className="bg-gray-700 text-white px-8 py-2 flex items-center justify-between gap-8">
-        <p className="text-md text-white md:text-base font-monoton  font-semi not-italic lg:text-2xl sm:text-base sx:text-base sx:mx-auto md:mx-0 lg:mx-0">
-          NEW  ECO CLEANING SERVICES
-        </p>
-        <p className="text-md text-[#FF5733] md:text-base sx:hidden sm:hidden md:block lg:block">
-          when your environment is clean you fell happy, motevated and healthy
-        </p>
-        <a
-          href="https://www.newecocleaning.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm md:text-base text-[#FF5733]  border border-[#FF5733] px-4 py-1 rounded hover:bg-[#FF5733] hover:text-white transition
-          sx:hidden sm:block md:block lg:block
-          "
-        >
-          www.newecocleaning.com
-        </a>
+    <div className="overflow-hidden bg-gray-200 text-white  py-3">
+      <div className="flex items-center justify-center whitespace-nowrap">
+  
+          <Marquee speed={90} className="text-orange-600 text-base font-bold">
+            When Your Environment is Clean, You Feel Happy, Motivated, and
+            Healthy
+          </Marquee>
+        
       </div>
     </div>
   );
-}
+};
 
-export default TopHeader
+export default TopHeader;

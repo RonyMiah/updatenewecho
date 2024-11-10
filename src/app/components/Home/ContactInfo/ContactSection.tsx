@@ -69,7 +69,7 @@ const ContactSection: React.FC = () => {
             <MdEmail className="text-blue-500 text-6xl mr-4" />
             <div>
               <h3 className="font-semibold text-lg"> Mail Address </h3>
-              <p className="text-gray-500">contact@newecocleaning.com</p>
+              <p className="text-gray-500">1ecoresources@gmail.com</p>
             </div>
           </div>
         </div>

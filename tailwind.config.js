@@ -11,7 +11,17 @@ export const content = [
 ];
 export const theme = {
   extend: {
-    
+     keyframes: {
+        loopScroll: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+      animation: {
+        'loop-scroll': 'loopScroll 15s linear infinite',
+      },
+
+
     colors: {
       primary: "#ff8901",
       secoundary: "#fb923c",
