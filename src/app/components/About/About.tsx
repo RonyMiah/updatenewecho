@@ -14,12 +14,16 @@ const AboutUs: React.FC = () => {
         {/* Left text Section */}
         <div className="lg:w-1/2 text-center lg:text-left mx-auto">
           <h1 className="text-6xl font-bold text-white mb-8">About Us</h1>
-          <p className="text-white mb-6 text-xl ">
-            At, NEW ECO, we understand that establishing positive and effective
-            leadership is a key factor in providing our customers with excellent
-            services. We also implement Health & Safety and Recycling Policies
-            that have been through both experience and knowledge and are in line
-            with the best practice management.
+          <p className="text-white mb-6 text-xl text-start ">
+            New Eco Resources BM Sdn. Bhd. (NEW ECO) was incorporated in Year
+            2023 providing cleaning services, garden maintenance, maintenance
+            service, landscaping, worker supply businesses mainly in Kuala
+            Lumpur Area, Malaysia . NEW ECO was launched with an aim to be
+            honest, trustworthy, trained and knowledgeable company that provides
+            high quality cleaning and janitorial services in commercial and
+            residential building that are dependable and professional in
+            Peninsula Malaysia.
+
           </p>
         </div>
 

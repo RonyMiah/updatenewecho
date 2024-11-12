@@ -19,32 +19,37 @@ const AboutCleaning = () => {
       {/* text Section  */}
       <div className="lg:w-[50%] bg-[#F2F5F7] rounded-lg p-8 mx-auto">
         <h1 className="text-3xl font-bold mb-4">
-          About NEW ECO Cleaning Services
+          Learn More About Our Company
         </h1>
         <p>
-          New Eco Resources BM Sdn. Bhd. (NEW ECO) was incorporated in Year 2023
-          providing cleaning, maintenance services, Import Export Services and
-          Manpower supply businesses mainly in Kuala Lumpur Area, Malaysia.
-        </p>
-        <p className="my-4">
-          NEW ECO was launched with an aim to be honest, trustworthy, trained
-          and knowledgeable company that provides high quality cleaning and
-          janitorial services in commercial and residential building that are
-          dependable and professional in Peninsula Malaysia.
-        </p>
-        <p className="mb-4">
           NEW ECO is setting new standards in cleaning services and is
           maintaining these standards through hard work and professionalism to
           create and strengthen our relationships with our customers. NEW ECO
           has one of the largest full-time staffs in the region and all are
           regularly and fully trained to meet high standards of quality and
-          cleaning performance, as well as specialty services certiﬁcation. We
-          are ready to fulﬁll your ofﬁce and facilities cleaning needs.
+          cleaning performance, as well as specialty services certification. We
+          are ready to fulfill your office and facilities cleaning needs.
         </p>
-        <h4 className="text-xl font-bold text-[#2563EB]">
+        <p className="my-4">
+          We understand that a clean working environment enhances the
+          productivity, health and work experience of your employees, improving
+          morale and increasing efficiency. We work hard to earn your trust and
+          confidence, going beyond just meeting your business’s daily cleaning
+          needs.
+        </p>
+        <p className="mb-4">
+          NEW ECO comprehensive range of cleaning services includes: Interior
+          Maintenance, Exterior Maintenance, Special Services, Value Added
+          Services, Post construction cleaning, Spring cleaning, Carpet and
+          upholstery cleaning, External facade cleaning, Mattress & Sofa
+          Cleaning, External Glass Windows Cleaning, Maintenance cleaning,
+          General, cleaning or Deep cleaning, Disinfecting service, Air
+          conditioning service, Export Import service and Manpower service.
+        </p>
+        {/* <h4 className="text-xl font-bold text-[#2563EB]">
           At New Eco, cleaning is our passion, and excellence is our standard.
           It’s more than just a job – it’s what we do best!
-        </h4>
+        </h4> */}
       </div>
     </div>
   );

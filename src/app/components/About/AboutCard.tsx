@@ -14,6 +14,7 @@ import { Card, CardContent } from "@/Components/ui/card";
 import { FiArrowRight } from "react-icons/fi";
 import Link from "next/link";
 import BackToTopButton from "../BackToTopButton/BackToTopButton";
+import CoreValue from "./CoreValue";
 
 const AboutCard = () => {
   const plugin = React.useRef(
@@ -28,24 +29,29 @@ const AboutCard = () => {
       <div className=" py-8 ">
         <div className="lg:container md:container justify-center items-center lg:px-28 md:px-10 sm:px-8 sx:px-6 flex sx:flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap ">
           {/* text Section  */}
-          <div className="lg:w-[50%] bg-[#2563EB] rounded-lg p-12 mx-auto">
+          <div className="lg:w-[50%] bg-[#2563EB] rounded-lg lg:p-12 p-6 mx-auto">
             <div className="my-3">
               <p className="flex justify-start gap-2 items-center  text-xl text-white">
-                We understand that a clean working environment enhances the
-                productivity, health and work experience of your employees,
-                improving morale and increasing efﬁciency. We work hard to earn
-                your trust and conﬁdence, going beyond just meeting your
-                business’s daily cleaning needs. NEW ECO comprehensive range of
-                cleaning services includes: Interior Maintenance, Exterior
-                Maintenance, Special Services, Value Added Services, Post
-                construction cleaning, Spring cleaning, Carpet and upholstery
-                cleaning, External facade cleaning, Mattress & Sofa Cleaning,
-                 General,
-                cleaning or Deep cleaning, Disinfecting service, Air
-                conditioning service, Export Import service and Manpower
-                service.
+                At, NEW ECO, we understand that establishing positive and
+                effective leadership is a key factor in providing our customers
+                with excellent services. We also implement Health & Safety and
+                Recycling Policies that have been through both experience and
+                knowledge and are in line with the best practice manageme .
               </p>
             </div>
+            <section className="bg-gray-100 py-6 px-6 md:px-10 lg:px-10 rounded-md">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">
+                  Our Vision
+                </h2>
+                <p className="mt-6 text-gray-600 leading-relaxed text-lg md:text-xl ">
+                  We are constantly working to be recognized by our clients,
+                  employees, and the industry as the most respected and leading
+                  provider of contract cleaning services and facilities support
+                  services in Malaysia.
+                </p>
+              </div>
+            </section>
           </div>
           {/* Carousel Section */}
           <div className="text-center sx:mt-10 sm:sx:mt-10 md:sx:mt-0 lg:sx:mt-0 ">
@@ -101,30 +107,58 @@ const AboutCard = () => {
       {/* Section 2 */}
       <div>
         {/* <hr className="border-[1px] border-red-500 " /> */}
-        <div className="pt-16">
+        <div className="pt-4">
           <div className="lg:container md:container justify-center items-center lg:px-28 md:px-10 sm:px-8 sx:px-6 flex sx:flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap ">
             {/* text Section  */}
-            <div className="lg:w-[100%]  rounded-lg p-12 mx-auto">
+            <div className="lg:w-[100%]  rounded-lg lg:p-12 mx-auto">
               <div className="my-3">
+                {/* Our Mission  */}
+                <section className="bg-white pb-16 pt-6 px-6 md:px-12 lg:px-24  ">
+                  <div className="max-w-4xl mx-auto text-center shadow-lg p-6 rounded-lg">
+                    <h2 className="text-3xl font-extrabold text-[#2563EB]  md:text-4xl">
+                      Our Mission
+                    </h2>
+                    <p className="mt-6 text-gray-600 leading-relaxed text-lg sx:text-start sm:text-start  md:text-xl">
+                      We are committed to providing the highest quality
+                      commercial cleaning service available by exceeding the
+                      expectations of our clients, as well as their employees
+                      and visitors to their premises or facilities through
+                      continuous improvements in Quality, Services, and
+                      Productivity.
+                    </p>
+                  </div>
+                </section>
+
                 <div
                   className="container mx-auto px-4 lg:px-8 
                 "
                 >
                   {/* Management Functions Section */}
                   <section className="mb-12">
-                    <h1 className="text-4xl lg:text-5xl font-bold text-center mb-8 text-[#2563EB]">
+                    {/* <h1 className="text-4xl lg:text-5xl font-bold text-center mb-8 text-[#2563EB]">
                       Management Functions
-                    </h1>
+                    </h1> */}
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                      {/* Management Functions */}
+                      <div className="bg-white shadow-lg p-6 rounded-lg">
+                        <h3 className="text-xl font-bold text-[#2563EB] mb-3">
+                          Management Functions
+                        </h3>
+                        <p className="text-gray-700">
+                          Our internal online management system, ensures that
+                          our team adheres to the following four major
+                          management functions.
+                        </p>
+                      </div>
                       {/* Planning */}
                       <div className="bg-white shadow-lg p-6 rounded-lg">
                         <h3 className="text-xl font-bold text-[#2563EB] mb-3">
                           Planning
                         </h3>
                         <p className="text-gray-700">
-                          Deﬁning goals, establishing strategy, and developing
-                          sub-plans to coordinate activities through a ﬂexible
+                          Defining goals, establishing strategy and developing
+                          sub-plans to coordinate activities through a flexible
                           management approach.
                         </p>
                       </div>
@@ -135,8 +169,8 @@ const AboutCard = () => {
                           Organizing
                         </h3>
                         <p className="text-gray-700">
-                          Determining what needs to be done, how it will be
-                          done, and who is to do it.
+                          Determining what needs to be done, how it will be done
+                          and who is to do it.
                         </p>
                       </div>
 
@@ -192,6 +226,7 @@ const AboutCard = () => {
           </button>
         </Link>
       </div>
+      <CoreValue/>
       <BackToTopButton />
     </div>
   );
