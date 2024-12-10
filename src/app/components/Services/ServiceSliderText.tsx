@@ -37,6 +37,9 @@ import carousel9_3 from "@/assets/services/carosel9-3.jpg";
 import carousel10_1 from "@/assets/services/carosel10-1.jpg";
 import carousel10_2 from "@/assets/services/carosel10-2.jpg";
 import carousel10_3 from "@/assets/services/carosel10-3.jpg";
+import carousel11_1 from "@/assets/services/carousel11_1.jpg";
+import carousel11_2 from "@/assets/services/carousel11_2.jpg";
+import carousel11_3 from "@/assets/services/carousel11_3.jpg";
 import Image from "next/image";
 import { Card, CardContent } from "@/Components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/Components/ui/carousel";
@@ -72,6 +75,9 @@ const ServiceSlideText = () => {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   const plugin10 = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
+  const plugin11 = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
@@ -1127,6 +1133,113 @@ const ServiceSlideText = () => {
               </Carousel>
             </div>
           </div>
+        </div>
+      </div>
+
+
+      {/* Section 11 */}
+      <div id="011">
+        <hr className="border-[1px] border-red-500 my-2 " />
+        {/* ServiceSlide 10 */}
+        <div
+          className="lg:container md:container justify-center items-center lg:px-28 md:px-10 sm:px-8 sx:px-6 flex sx:flex-wrap sm:flex-wrap md:flex-wrap lg:flex-nowrap "
+          id="11"
+        >
+
+
+ {/* Carousel Section */}
+ <div>
+            <div className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px] lg:my-12 md:my-12 sm:my-6 sx:my-4">
+              <Carousel
+                plugins={[plugin11.current]}
+                className="relative"
+                onMouseEnter={plugin11.current.stop}
+                onMouseLeave={plugin11.current.reset}
+              >
+                <CarouselContent>
+                  {[carousel11_1, carousel11_2, carousel11_3].map(
+                    (singleImage, index) => (
+                      <CarouselItem key={index}>
+                        <div className="p-1">
+                          <Card>
+                            <CardContent className="flex items-center justify-center p-0">
+                              <Image
+                                src={singleImage}
+                                alt={`Slide ${index + 1}`}
+                                className="lg:w-[400px] md:w-[400px] sm:w-[400px] sx:w-[300px] lg:h-[550px] md:h-[550px] sm:h-[550px] sx:h-[450px]"
+                              />
+                            </CardContent>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                    )
+                  )}
+                </CarouselContent>
+
+                {/* Position left arrow */}
+                <CarouselPrevious className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-red-600 p-2 rounded-full hover:bg-red-600 hover:text-white">
+                  <MdOutlineKeyboardArrowLeft />
+                </CarouselPrevious>
+
+                {/* Position right arrow */}
+                <CarouselNext className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 hover:bg-red-600 hover:text-white text-red-600 p-2 rounded-full">
+                  <MdOutlineKeyboardArrowRight />
+                </CarouselNext>
+              </Carousel>
+            </div>
+          </div>
+
+          {/* Text Section */}
+          <div className=" lg:px-8 md:px-8 sm:px-5 sx:px-2">
+            <h4 className="text-4xl text-red-600 font-bold">10</h4>
+            <h1 className="text-3xl font-bold text-[#32297C] my-2">
+            HOTEL HOUSEKEEPING SERVICES
+            </h1>
+            <p className="text-base">
+            NEW ECO provides
+            
+            <span className="text-[#32297C] font-bold mx-2">
+            Premium hotel housekeeping services across Malaysia,
+              </span>
+             designed to meet the unique needs of the hospitality industry. With competitive pricing, we ensure that your hotel is kept in pristine condition, offering a comfortable and welcoming environment for your guests.
+             
+             <span className="text-[#32297C] font-bold mx-2">
+              Our team of trained, reliable housekeepers
+              </span>
+              is supervised regularly by our managers to maintain high standards of cleanliness. Whether it&apos;s for safety, hygiene, or convenience, every detail is meticulously handled. Our systems are optimized to ensure consistency, quality, and efficiency in every service we provide.
+
+              By choosing NEW ECO, you can rest assured that your hotel will be impeccably maintained, helping you project a professional and inviting image to your guests. We understand the importance of client satisfaction and prioritize your hotel&apos;s reputation for cleanliness and care.
+              
+          
+        
+            </p>
+
+            <h4 className="text-[#32297C] text-xl font-bold my-3">
+            Our housekeeping services include:
+            </h4>
+
+            <ul className="list-disc pl-5 lg:flex  lg:gap-14 ">
+              <div>
+                <li>Guestroom Cleaning and Turnover</li>
+                <li>Public Area Maintenance </li>
+                <li>Linen and Laundry Services</li>
+                <li>Bathroom Sanitation</li>
+                <li>Window and Glass Cleaning</li>
+              </div>
+              {/* <div>
+                <li>Schools / Universities</li>
+                <li>Galleries / Venues</li>
+                <li>Sport & Leisure Facilities</li>
+                <li>Hospitals and Residential properties </li>
+              </div> */}
+            </ul>
+
+            <button className="bg-[#32297C] text-white flex justify-center items-center gap-1 px-4 py-2 rounded-full text-base hover:bg-red-600 my-2">
+            Hotel Housekeeping Services <FaArrowUp />
+            </button>
+          </div>
+
+         
         </div>
       </div>
       <BackToTopButton />

@@ -105,6 +105,16 @@ const ServiceCard = () => {
             </h3>
           </div>
         </Link>
+        <Link to="11" spy={true} smooth={true} offset={-150} duration={500}>
+          <div className="bg-indigo-900 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64  hover:bg-red-600">
+            <span className="text-red-500 font-semibold hover:text-white">
+              10
+            </span>
+            <h3 className="text-lg font-bold mt-2">
+            HOTEL HOUSEKEEPING SERVICES
+            </h3>
+          </div>
+        </Link>
 
         {/* Card Last */}
         {/* <div className="bg-red-600 text-white rounded-2xl p-6 w-full sm:w-48 md:w-60 lg:w-64 hover:bg-indigo-900 hover:text-white ">

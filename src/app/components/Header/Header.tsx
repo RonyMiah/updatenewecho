@@ -226,6 +226,14 @@ export default function Header() {
                             Tree & Garden Maintenance
                           </Link>
                         </DropdownItem>
+                        <DropdownItem
+                          key="supreme_support"
+                          //   startContent={icons.user}
+                        >
+                          <Link prefetch={true} href={"/services#011"}>
+                            Hotel Housekeeping Services 
+                          </Link>
+                        </DropdownItem>
                       </DropdownMenu>
                     </Dropdown>
                   ) : (
@@ -368,6 +376,15 @@ export default function Header() {
                         <Link href={"/services#010"}>
                           Tree & Garden Maintenance
                         </Link>
+                      </DropdownItem>
+                      <DropdownItem
+                        onClick={() => setIsMenuOpen(false)}
+                        key="supreme_support"
+                        //   startContent={icons.user}
+                      >
+                         <Link  href={"/services#011"}>
+                            Hotel Housekeeping Services 
+                          </Link>
                       </DropdownItem>
                     </DropdownMenu>
                   </Dropdown>
