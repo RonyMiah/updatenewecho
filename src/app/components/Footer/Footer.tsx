@@ -81,12 +81,14 @@ const Footer: React.FC = () => {
         {/* Contact Us */}
         <div className="space-y-4">
           <h3 className="text-lg font-semibold text-white">Contact us</h3>
-          <div className="flex items-center space-x-2">
-            <FaMapMarkerAlt className="text-green-500" />
-            <p>
-              Lot 568-03-91, Kompleks Mutiara, Batu 3 ½ , Jalam Lpoh, 51200,
-              Kuala Lampur, Malaysia
-            </p>
+          <div className=" items-center space-x-2">
+            <FaMapMarkerAlt className="text-green-500 text-xs w-9 h-9 " />
+            <div>
+            <h3 className="text-xl font-bold">Head Office : </h3>
+            <p>5410A, Jalan Kenari 18, Bandar Putra, 81000 Kulai, Johor Darul Ta&apos;zim.</p>
+            <h3 className="text-xl font-bold pt-2">Branch Office : </h3>
+            <p>Lot 568-03-91, Kompleks Mutiara, Batu 3 ½ , Jalam Lpoh, 51200, Kuala Lampur, Malaysia </p>
+            </div>
           </div>
           <div className="flex items-center space-x-2">
             <FaPhone className="text-green-500" />

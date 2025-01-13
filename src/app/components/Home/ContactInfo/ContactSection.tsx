@@ -31,11 +31,12 @@ const ContactSection: React.FC = () => {
           <div className="flex items-center p-10 border rounded-xl shadow-sm">
             <MdLocationOn className="text-blue-500 size-36  mr-4" />
             <div>
-              <h3 className="font-semibold text-2xl">Office Address</h3>
-              <p className="text-gray-500">
-                Lot 568-03-91, Kompleks Mutiara, Batu 3 ½ , Jalam Lpoh, 51200,
-                Kuala Lampur, Malaysia
-              </p>
+              <h3 className="font-bold text-3xl py-2"> Office Address </h3>
+              <h3 className="text-md font-bold">Head Office : </h3>
+            <p>5410A, Jalan Kenari 18, Bandar Putra, 81000 Kulai, Johor Darul Ta&apos;zim.</p>
+            <h3 className="text-md font-bold">Branch Office : </h3>
+            <p>Lot 568-03-91, Kompleks Mutiara, Batu 3 ½ , Jalam Lpoh, 51200, Kuala Lampur, Malaysia </p>
+            
             </div>
           </div>
 
