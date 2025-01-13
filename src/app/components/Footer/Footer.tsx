@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold">Head Office : </h3>
             <p>5410A, Jalan Kenari 18, Bandar Putra, 81000 Kulai, Johor Darul Ta&apos;zim.</p>
             <h3 className="text-xl font-bold pt-2">Branch Office : </h3>
-            <p>Lot 568-03-91, Kompleks Mutiara, Batu 3 ½ , Jalam Lpoh, 51200, Kuala Lampur, Malaysia </p>
+            <p>Lot 568-03-91, Kompleks Mutiara, Batu 3 ½ , Jalan Ipoh, 51200, Kulal Lampur </p>
             </div>
           </div>
           <div className="flex items-center space-x-2">
